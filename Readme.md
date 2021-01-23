@@ -2,7 +2,7 @@
 
 * Студент: [Мария Кравец](https://up.htmlacademy.ru/htmlcss/30/user/1677417).
 * Наставник: [Андрей Жилин](https://htmlacademy.ru/profile/andreyka).
-ggg
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
