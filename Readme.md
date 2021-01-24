@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Кравец](https://up.htmlacademy.ru/htmlcss/30/user/1677417).
-* Наставник: [Андрейкаы Жилин](https://htmlacademy.ru/profile/andreyka).
+* Наставник: [Андрейка Жилин](https://htmlacademy.ru/profile/andreyka).
 
 ---
 
