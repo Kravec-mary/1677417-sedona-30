@@ -6,6 +6,149 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Вторая страница</h1>
+    <header>
+        <nav>
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+        <a href="#">
+          <img src="#" width="138" height="70" alt="Логотип City of Sedona">
+        </a>
+       </nav>
+    </header>  
+    <main>
+        <section>
+            <form method="get" action="#">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="pool" id="filter-pool" checked>
+                            <label for="filter-pool">Бассейн</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="parking" id="filter-parking">
+                            <label for="filter-parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="wifi" id="filter-wifi">
+                            <label for="filter-wifi">Wi-fi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">Гостиница</label>
+                    <input type="checkbox" name="motel" id="filter-motel" checked>
+                    <label for="filter-motel">Мотель</label>
+                    <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                    <label for="filter-apartments">Апартаменты</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+
+                    <!-- Здесь будет форма диапозона стоимости -->
+                </fieldset>
+                 <button type="submit">Показать</button>
+            </form>
+        </section>
+                <section>
+                    <h3>Найдено:3</h3>
+                    <p>Сортировка:</p>
+                    <ul>
+                        <li>
+                            <a href="#">&#9650;</a>
+                        </li>
+                        <li>
+                            <a href="#">&#9660;</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button type="button">По цене</button>
+                        </li>
+                        <li>
+                            <button type="button">По типу</button> 
+                        </li>
+                        <li>
+                            <button type="button">По рейтингу</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h3>Amara resort & spa</h3>
+                                <p>&#9733;&#9733;&#9733;&#9733;
+                                    Рейтинг: 8,5
+                                </p>
+                                <p>Гостиница от 4000Р.</p>
+                                 <img src="#" width="135" height="90" alt="Amara resort & spa">
+                            </a>
+                            <p>
+                                <button type="button">Подробнее</button>
+                                <button type="button">Забронировать</button>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>Dessert quail inn</h3>
+                                <p>&#9733;&#9733;&#9733;
+                                    Рейтинг: 8,9
+                                </p>
+                                <p>Мотель от 3000Р.</p>
+                                 <img src="#" width="135" height="90" alt="Dessert quail inn">
+                            </a>
+                            <p>
+                                <button type="button">Подробнее</button>
+                                <button type="button">Забронировать</button>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>Villas at poco diablo</h3>
+                                <p>&#9733;&#9733;
+                                    Рейтинг: 9,2
+                                </p>
+                                <p>Апартаменты от 2000Р.</p>
+                                 <img src="#" width="135" height="90" alt="Villas at poco diablo">
+                            </a>
+                            <p>
+                                <button type="button">Подробнее</button>
+                                <button type="button">Забронировать</button>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+    </main>
+    <footer>
+        <section>
+         <h2>Контактная информация</h2>
+         <p>#visitsedona<br>
+           Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+         </p>
+        </section>
+        <section>
+          <h2>Социальные сети</h2>
+          <ul>
+            <li> <a href="#">Twitter</a>
+            </li>
+            <li> <a href="#">Facebook</a>
+            </li>
+            <li> <a href="#">Youtube</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <p>Website by 
+            <img src="#" width="114" height="40" alt="Logo Html Akademy">
+          </p> 
+        </section>
+       </footer>
 </body>
 </html>
+
+
