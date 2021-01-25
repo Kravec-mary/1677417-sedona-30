@@ -23,7 +23,7 @@
         <section>
             <form method="get" action="#">
                 <fieldset>
-                    <legend>Инфраструктура:</legend>
+                    <legend><h3>Инфраструктура:</h3></legend>
                     <ul>
                         <li>
                             <input type="checkbox" name="pool" id="filter-pool" checked>
@@ -40,33 +40,32 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Тип жилья:</legend>
+                    <legend><h3>Тип жилья:</h3></legend>
+                    <ul>
+                  <li>
                     <input type="checkbox" name="hotel" id="filter-hotel" checked>
                     <label for="filter-hotel">Гостиница</label>
+                  </li>
+                  <li>
                     <input type="checkbox" name="motel" id="filter-motel" checked>
                     <label for="filter-motel">Мотель</label>
+                 </li>
+                 <li>
                     <input type="checkbox" name="apartments" id="filter-apartments" checked>
                     <label for="filter-apartments">Апартаменты</label>
+                 </li>
+                </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Стоимость в сутки (Р):</legend>
-
+                    <legend><h3>Стоимость в сутки (Р):</h3></legend>
                     <!-- Здесь будет форма диапозона стоимости -->
                 </fieldset>
                  <button type="submit">Показать</button>
             </form>
         </section>
                 <section>
-                    <h3>Найдено:3</h3>
+                    <h3>Найдено<span>:3</span></h3>
                     <p>Сортировка:</p>
-                    <ul>
-                        <li>
-                            <a href="#">&#9650;</a>
-                        </li>
-                        <li>
-                            <a href="#">&#9660;</a>
-                        </li>
-                    </ul>
                     <ul>
                         <li>
                             <button type="button">По цене</button>
@@ -80,46 +79,48 @@
                     </ul>
                     <ul>
                         <li>
-                            <a href="#">
-                                <h3>Amara resort & spa</h3>
-                                <p>&#9733;&#9733;&#9733;&#9733;
-                                    Рейтинг: 8,5
-                                </p>
-                                <p>Гостиница от 4000Р.</p>
-                                 <img src="#" width="135" height="90" alt="Amara resort & spa">
-                            </a>
-                            <p>
-                                <button type="button">Подробнее</button>
-                                <button type="button">Забронировать</button>
-                            </p>
+                            <a href="#">&#9650;</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <h3>Dessert quail inn</h3>
-                                <p>&#9733;&#9733;&#9733;
-                                    Рейтинг: 8,9
-                                </p>
+                            <a href="#">&#9660;</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="#" width="135" height="90" alt="Amara resort & spa">
+                                <div>
+                                    <a href="#">
+                                    <h3>Amara resort & spa</h3></a>
+                                    <p>Гостиница от 4000Р.</p>
+                                        <button type="button">Подробнее</button>
+                                        <button type="button">Забронировать</button>
+                                </div>
+                                <div>&#9733;&#9733;&#9733;&#9733;</div>
+                                    <p>Рейтинг: 8,5</p>
+                        </li>
+                        <li>
+                            <img src="#" width="135" height="90" alt="Dessert quail inn">
+                            <div>
+                             <a href="#">
+                                <h3>Dessert quail inn</h3></a>
                                 <p>Мотель от 3000Р.</p>
-                                 <img src="#" width="135" height="90" alt="Dessert quail inn">
-                            </a>
-                            <p>
-                                <button type="button">Подробнее</button>
-                                <button type="button">Забронировать</button>
-                            </p>
+                                 <button type="button">Подробнее</button>
+                                 <button type="button">Забронировать</button>
+                            </div>
+                                <div>&#9733;&#9733;&#9733;</div>
+                                    <p>Рейтинг: 8,9</p>
                         </li>
                         <li>
+                            <img src="#" width="135" height="90" alt="Villas at poco diablo">
+                            <div>
                             <a href="#">
-                                <h3>Villas at poco diablo</h3>
-                                <p>&#9733;&#9733;
-                                    Рейтинг: 9,2
-                                </p>
+                                <h3>Villas at poco diablo</h3></a>
                                 <p>Апартаменты от 2000Р.</p>
-                                 <img src="#" width="135" height="90" alt="Villas at poco diablo">
-                            </a>
-                            <p>
                                 <button type="button">Подробнее</button>
                                 <button type="button">Забронировать</button>
-                            </p>
+                            </div>
+                                <div>&#9733;&#9733;</div>
+                                    <p>Рейтинг: 9,2</p>
                         </li>
                     </ul>
                 </section>
