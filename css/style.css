@@ -1,61 +1,71 @@
-@font-face {
-  font-family: "PtSans";
-  src: local("Fonts"),
-       url("PTSans.woff2") format("woff2"),
-       url("PTSans.woff") format("woff");
-  font-weight: 400;
-  font-style: regular;
-}
-@font-face {
-  font-family: "PtSans-Bold";
-  src: local("Fonts"),
-       url("PTSans-Bold.woff2") format("woff2"),
-       url("PTSans-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: bold;
-}
-
 /* Variables */
 :root {
- --basic-black: #000000; 
- --basic-dark: #333333;
- --basic-white: #FFFFFF;
- --special-blue: #81B3D2;
- --special-brown: #766357;
- --grey: #666666;
+  --basic-black: #000000; 
+  --basic-dark: #333333;
+  --basic-white: #FFFFFF;
+  --special-blue: #81B3D2;
+  --special-brown: #766357;
+  --special-brown-2: #604E43;
+  --special-brown-dark: #503E33;
+  --grey: #666666;
+  --special-grey: #6A6A6A;
+  --test-color: rgba(0,0,0,0.3); 
+  --test-color-2: rgba(255,255,255,0.3);
+  --special-color-light-gray: #CACACA;
+  --special-color-blue: #669EC0;
+  --special-color-dark-blue: #5496BD;
+  --special-color-dark-white: #F2F2F2;
+ 
+ }
 
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("PT Sans"), local("PTSans")
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  
 }
-
+@font-face {
+  font-family: "PT Sans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("PT Sans-Bold"), local("PTSans-Bold")
+       url("PTSans-Bold.woff2") format("woff2"),
+       url("PTSans-Bold.woff") format("woff");
+  
+}
 .page-body {
   margin: 0;
   padding: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   color: var(--basic-black);
   font-weight: 400;
-  Font-size: 14px;
-  Line-height: 21px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
 
 }
-
-.page-navigation-current a:not([href]) {
+.page-navigation-link {
   color: var(--basic-black);
 }
-.page-navigation a:hover
- {
+
+.page-navigation-link:hover {
   color: var(--special-blue);
+
 }
-.page-navigation a:active
-{
-  color: var(--)
+.page-navigation-link:active {
+  color: var(--test-color);
 }
 
 .page-navigation {
   color: inherit;
-  text-decoration: none;
   list-style: none;
 }
-}
+
 a {
   text-decoration: none;
 }
@@ -75,7 +85,7 @@ img {
 }
 .heading {
   background-color: var(--special-blue);
-  background-image:url(/img/sedona-1page-background.jpg);
+  background-image:url(../img/sedona-1page-background.jpg);
   
 }
 .headline {
@@ -130,9 +140,17 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #604E43;
+}
+.btn:active {
+  background-color: var(--special-brown-dark);
+  color: rgba(255,255,255,0.3);
 }
 .contacts {
-  text-size: 21px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color:var(--basic-black);
@@ -142,11 +160,143 @@ img {
 .footer-phone {
   color: inherit;
 }
-.socials {
-  list-style: none;
-  
-}
-.social-botton img{
+.socials li{
   list-style: none;
 }
 
+/* second page*/
+
+.filtering {
+  background-color: var(--special-blue);
+  background-image: url(../img/sedona-2page-background.jpg)
+}
+.filter-item {
+  list-style: none;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.title-filters {
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.filter-btn {
+  background: transparent;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+.filter-btn:hover {
+  background-color: var(--basic-white);
+  color:var(--basic-black);
+}
+.heding-found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.result {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.paragraph {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.btn-filter-choice {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  
+}
+.btn-filter-choice-price:active {
+  color: var(--special-blue);
+}
+.btn-filter-choice-type {
+  color: var(--test-color);
+}
+.btn-filter-choice-rating {
+  color: var(--test-color);
+}
+.btn-filter-choice-rating:hover {
+  color: var(--special-blue);
+}
+.btn-filter-choice-rating:active {
+  color: var(--basic-black);
+}
+
+.arrow {
+  color: var(--special-color-light-gray);
+}
+.arrow:hover {
+  color: var(--basic-black);
+}
+.arrow:active {
+  color: var(--special-blue);
+}
+
+.title-name {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 14x;
+  line-height: 21px;
+  font-weight: 400;
+  color:var(--basic-dark);
+}
+.btn-detail {
+  color: var(--basic-white);
+  background-color: var(--special-blue);
+  text-transform: uppercase;
+  font-size: 14x;
+  line-height: 21px;
+  font-weight: 700;
+
+}
+.btn-detail:hover {
+  background-color: var(--special-color-blue);
+}
+.btn-detail:active {
+  background-color: var(--special-color-dark-blue);
+  color: var(--test-color-2);
+}
+.btn-book {
+  color: var(--basic-white);
+  background-color: var(--special-brown);
+  text-transform: uppercase;
+  font-size: 14x;
+  line-height: 21px;
+  font-weight: 700;
+}
+.btn-book:hover {
+  background-color: var(--special-brown-2);
+}
+.btn-book:active {
+  color: rgba(255,255,255,0.3);
+  background-color: var(--special-brown-dark);
+}
+.hotel-rating {
+  color: var(--grey);
+  background: var(--special-color-dark-white);
+  padding: 2px;
+  display: inline;
+}
+.stars {
+  color: var(--special-blue);
+}
