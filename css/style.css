@@ -61,6 +61,9 @@
   color: var(--test-color);
 }
 
+.current-page-navigaion-link {
+  color: var(--special-brown);
+}
 .page-navigation {
   color: inherit;
   list-style: none;
@@ -163,6 +166,15 @@ img {
 .socials li{
   list-style: none;
 }
+path:active {
+  fill: var(--test-color-2);
+}
+rect:hover {
+  fill: var(--special-color-blue);
+}
+rect:active {
+  fill: var(--special-color-dark-blue);
+}
 
 /* second page*/
 
@@ -183,6 +195,20 @@ img {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+}
+.prise-range {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: transparent;
+}
+::-webkit-input-placeholder{
+  color: var(--basic-white);
+}
+.prise-range-choice {
+  list-style: none;
+  color: var(--basic-white);
 }
 
 .filter-btn {
@@ -222,9 +248,10 @@ img {
   border: 0;
   
 }
-.btn-filter-choice-price:active {
+.btn-filter-choice-price {
   color: var(--special-blue);
 }
+
 .btn-filter-choice-type {
   color: var(--test-color);
 }
@@ -241,6 +268,7 @@ img {
 .arrow {
   color: var(--special-color-light-gray);
 }
+
 .arrow:hover {
   color: var(--basic-black);
 }
@@ -253,6 +281,12 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+.title-name:hover {
+  color: var(--special-blue);
+}
+.title-name:active {
+  color: var(--test-color);
 }
 .subtitle {
   font-size: 14x;
