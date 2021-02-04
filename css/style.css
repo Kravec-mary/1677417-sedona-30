@@ -15,7 +15,7 @@
   --special-color-blue: #669EC0;
   --special-color-dark-blue: #5496BD;
   --special-color-dark-white: #F2F2F2;
- 
+  --special-gray: #BDBBBC;
  }
 
 @font-face {
@@ -48,6 +48,11 @@
   line-height: 21px;
   text-transform: uppercase;
 
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 .page-navigation-link {
   color: var(--basic-black);
@@ -65,6 +70,13 @@
   color: var(--special-brown);
 }
 .page-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 140px;
+  margin: 0;
+  padding: 0;
+  margin: 0 50px;
+
   color: inherit;
   list-style: none;
 }
@@ -77,32 +89,52 @@ img {
   height: auto;
 
 }
+.main-header {
+  margin-bottom: 0;
+}
+
 .main-navigation {
   color: var(--basic-black);
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-
-
-}
-.heading {
-  background-color: var(--special-blue);
-  background-image:url(../img/sedona-1page-background.jpg);
+  display: grid;
+  
   
 }
+
+.heading {
+  min-height: 509px;
+  width: 1200px;
+  background-color: var(--special-blue);
+  background-image: url(../img/sedona-1page-background.jpg);
+  background-size: 1200px 509px;
+  text-align: center;
+  
+}
+
 .headline {
   color:var(--basic-black);
+  text-align: center;
 }
+
+.subtitle-p {
+  text-align: center;
+}
+
 .five-reasons {
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-dark);
 }
+
 .reason-item-with-pic {
   background-color: var(--special-blue);
   background-size: 400px 256px;
   color: var(--basic-white);
+  list-style: none;
+
 }
 .reason-item-with-pic h3 {
   font-size: 21px;
@@ -116,8 +148,22 @@ img {
   color:var(--basic-black)  
 }
 .reason-item {
+  float: left;
+  margin-left: 90px;
   list-style: none;
+  
 }
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 125px;
+  margin: 0;
+  padding: 0;
+  margin: 0 50px;
+}
+
+
 .feature-item {
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -128,7 +174,9 @@ img {
   font-weight: 400;
 
 }
-
+.appointment {
+  text-align: center;
+}
 .appointment-title {
   font-size: 30px;
   line-height: 24px;
@@ -160,13 +208,23 @@ img {
   list-style: none;
   
 }
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 0;
+  margin-left: 130px;
+  margin-bottom: 30px;
+  margin-right: 130px;
+  margin-top: 30px;
+
+}
 .footer-phone {
   color: inherit;
 }
 .socials li{
   list-style: none;
 }
-path:active {
+/*path:active {
   fill: var(--test-color-2);
 }
 rect:hover {
@@ -174,6 +232,13 @@ rect:hover {
 }
 rect:active {
   fill: var(--special-color-dark-blue);
+} */
+
+.html-academy:hover {
+  fill: var(--special-blue);
+}
+.html-academy:active {
+  opacity: 0.3;
 }
 
 /* second page*/
@@ -333,4 +398,9 @@ rect:active {
 }
 .stars {
   color: var(--special-blue);
+}
+
+/* grid */
+.page {
+  height: 100%;
 }
