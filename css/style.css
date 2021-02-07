@@ -53,6 +53,8 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  width: 1200px;
+  margin: 0 auto;
 }
 .page-navigation-link {
   color: var(--basic-black);
@@ -131,12 +133,11 @@ img {
 
 
 .reason-item-with-pic {
-  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   background-color: var(--special-blue);
   color: var(--basic-white);
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
 }
 
 .container-1-element {
@@ -175,6 +176,8 @@ img {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  padding: 0;
+  text-align: center;
 
 }
 .feature-item h3 {
@@ -228,13 +231,7 @@ img {
 .socials li{
   list-style: none;
 }
-.icon-twitter,
-.icon-facebook,
-.icon-youtube {
-  background-color: var(--special-blue);
-  background-size: 46px 48px;
 
-}
 
 .html-academy:hover {
   fill: var(--special-blue);
@@ -242,8 +239,45 @@ img {
 .html-academy:active {
   opacity: 0.3;
 }
-
+.twitter-btn,
+.facebook-btn,
+.youtube-btn
+ {
+  fill: var(--basic-white);
+}
+.social-button {
+  background-color: var(--special-blue);
+  width: 46px;
+  height: 48px;
+  
+}
+.twitter-btn:hover {
+ background-color: var(--special-color-blue);
+}
+.facebook-btn:hover {
+  background-color: var(--special-color-blue);
+}
+.youtube-btn:hover {
+  background-color: var(--special-color-blue);
+}
+.twitter-btn:active {
+  background-color: var(--special-color-dark-blue);
+  fill: var(--test-color-2);
+} 
+.facebook-btn:active {
+  background-color: var(--special-color-dark-blue);
+  fill: var(--test-color-2);
+} 
+.youtube-btn:active {
+  background-color: var(--special-color-dark-blue);
+  fill: var(--test-color-2);
+} 
 /* second page*/
+.container-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  text-align: center;
+}
 
 .filtering {
   background-color: var(--special-blue);
@@ -306,6 +340,19 @@ img {
   line-height: 18px;
   font-weight: 400;
 }
+.container-btn-filter {
+display: flex;
+justify-content: center;
+list-style: none;
+
+}
+
+.container-found {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
 .btn-filter-choice {
   font-size: 12px;
   line-height: 18px;
@@ -317,6 +364,7 @@ img {
 }
 .btn-filter-choice-price {
   color: var(--special-blue);
+
 }
 
 .btn-filter-choice-type {
@@ -342,7 +390,11 @@ img {
 .arrow:active {
   color: var(--special-blue);
 }
-
+.container-arrow {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
 .title-name {
   color: var(--basic-black);
   font-size: 21px;
@@ -354,6 +406,19 @@ img {
 }
 .title-name:active {
   color: var(--test-color);
+}
+.container-hotels {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+}
+.container-subtitle {
+  display: flex;
+  justify-content: start;
+}
+.container-rating-stars {
+  display: flex;
+  justify-content: flex-end;
 }
 .subtitle {
   font-size: 14x;
