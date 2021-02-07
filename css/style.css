@@ -49,7 +49,7 @@
   text-transform: uppercase;
 
 
-  min-height: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -71,14 +71,14 @@
 }
 .page-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
   column-gap: 140px;
   margin: 0;
   padding: 0;
   margin: 0 50px;
-
   color: inherit;
   list-style: none;
+  align-items: center;
 }
 
 a {
@@ -129,13 +129,27 @@ img {
   color: var(--basic-dark);
 }
 
+
 .reason-item-with-pic {
+  
   background-color: var(--special-blue);
-  background-size: 400px 256px;
   color: var(--basic-white);
   list-style: none;
-
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
+
+.container-1-element {
+  display:grid;
+  justify-items: center;
+  align-items: center;
+}
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
 .reason-item-with-pic h3 {
   font-size: 21px;
   line-height: 21px;
@@ -147,22 +161,11 @@ img {
   font-weight: 700;
   color:var(--basic-black)  
 }
-.reason-item {
-  float: left;
-  margin-left: 90px;
+.container-reasons-2 {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
-  
 }
-
-.features-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 125px;
-  margin: 0;
-  padding: 0;
-  margin: 0 50px;
-}
-
 
 .feature-item {
   color: var(--basic-black);
@@ -174,6 +177,11 @@ img {
   font-weight: 400;
 
 }
+.feature-item h3 {
+  color: var(--basic-black);
+  font-size: 21px;
+}
+
 .appointment {
   text-align: center;
 }
@@ -184,6 +192,7 @@ img {
   font-weight: 700;
   color: var(--basic-black)
 }
+
 .btn {
 
   background-color: var(--special-brown);
@@ -209,13 +218,8 @@ img {
   
 }
 .main-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 30px 0;
-  margin-left: 130px;
-  margin-bottom: 30px;
-  margin-right: 130px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 
 }
 .footer-phone {
@@ -224,15 +228,13 @@ img {
 .socials li{
   list-style: none;
 }
-/*path:active {
-  fill: var(--test-color-2);
+.icon-twitter,
+.icon-facebook,
+.icon-youtube {
+  background-color: var(--special-blue);
+  background-size: 46px 48px;
+
 }
-rect:hover {
-  fill: var(--special-color-blue);
-}
-rect:active {
-  fill: var(--special-color-dark-blue);
-} */
 
 .html-academy:hover {
   fill: var(--special-blue);
