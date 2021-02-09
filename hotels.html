@@ -86,27 +86,27 @@
         </form>
       </section>
       <section>
+          <div class="container-found-filters">
           <div class="container-found">
-        <h3 class="heding-found">Найдено:</h3>
-        <span class="result">3</span>
-        <p class="paragraph">Сортировка:</p>
+        <div><h3 class="heding-found">Найдено:</h3></div>
+        <div><span class="result">3</span></div>
+        <div><p class="paragraph">Сортировка:</p></div>
          </div>
         <ul>
-        
             <div class="container-btn-filter"> 
-          <li>
+          <li class="btn-choice">
             <button class="btn-filter-choice-price btn-filter-choice" type="button">По цене</button>
           </li>
-          <li>
+          <li class="btn-choice">
             <button class="btn-filter-choice-type btn-filter-choice" type="button">По типу</button>
           </li>
-          <li>
+          <li class="btn-choice">
             <button class="btn-filter-choice-rating btn-filter-choice" type="button">По рейтингу</button>
           </li>
         </div>
-        
         </ul>
         </ul>
+        <div>
         <ul class="container-arrow">
           <li>
             <a class="arrow" href="#">&#9650;</a>
@@ -115,35 +115,41 @@
             <a class="arrow" href="#">&#9660;</a>
           </li>
         </ul>
+      </div>
+      </div>
         <ul class="container-hotels">
           <li>
-            <img
+            <div class="container-choice-hotels">  
+            <div><img
               src="img/amara-resort.jpg"
               width="135"
               height="90"
               alt="Amara resort & spa"
-            />
+            /></div>
             <div>
               <a href="#"> <h3 class="title-name">Amara resort & spa</h3></a>
               <div class="container-subtitle">
               <p class="subtitle">Гостиница</p>
               <p class="subtitle">от 4000Р.</p>
-             </div>
+              </div>
               <button class="btn-detail" type="button">Подробнее</button>
               <button class="btn-book" type="button">Забронировать</button>
             </div>
-            <div class="container-rating-stars">
+        <div>
+            <div class="container-rating-stars"></div>
             <div class="stars">&#9733;&#9733;&#9733;&#9733;</div>
             <p class="hotel-rating">Рейтинг: 8,5</p>
-            </div>
+        </div> 
+           </div>
           </li>
           <li>
-            <img
+            <div class="container-choice-hotels">    
+            <div><img
               src="img/dessert-quail-inn.jpg"
               width="135"
               height="90"
               alt="Dessert quail inn"
-            />
+            /></div>
             <div>
               <a href="#"> <h3 class="title-name">Dessert quail inn</h3></a>
               <div class="container-subtitle">
@@ -153,18 +159,21 @@
               <button class="btn-detail" type="button">Подробнее</button>
               <button class="btn-book" type="button">Забронировать</button>
             </div>
-            <div class="container-rating-stars">
+            <div>
+            <div class="container-rating-stars"></div>
             <div class="stars">&#9733;&#9733;&#9733;</div>
             <p class="hotel-rating">Рейтинг: 8,9</p>
            </div>
+            </div>
           </li>
           <li>
-            <img
+            <div class="container-choice-hotels">
+             <div><img
               src="img/villas-at-poco.jpg"
               width="135"
               height="90"
               alt="Villas at poco diablo"
-            />
+            /></div>
             <div>
               <a href="#"> <h3 class="title-name">Villas at poco diablo</h3></a>
               <div class="container-subtitle">
@@ -174,9 +183,11 @@
               <button class="btn-detail" type="button">Подробнее</button>
               <button class="btn-book" type="button">Забронировать</button>
             </div>
-            <div class="container-rating-stars">
+            <div>
+            <div class="container-rating-stars"></div>
             <div class="stars">&#9733;&#9733;</div>
             <p class="hotel-rating">Рейтинг: 9,2</p>
+           </div>
            </div>
           </li>
         </ul>
@@ -192,27 +203,27 @@
         </section>
         <section class="socials">
             <h2>Социальные сети</h2>
-            <ul>
-              <li>
-                <a class="social-button" href="#"
-                  ><svg class="twitter-btn" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" />
-                    </svg></a>
-              </li>
-              <li>
-                <a class="social-button" href="#"
-                  ><svg class="facebook-btn" width="12" height="22" viewBox="0 0 12 22"  xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" />
-                    </svg></a>
-              </li>
-              <li>
-                <a class="social-button" href="#"
-                ><svg class="youtube-btn"width="20" height="16" viewBox="0 0 20 16"  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
+        <ul>
+          <li class="soc">
+            <a class="social-button" href="#"
+              ><svg class="social-btn" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" />
+                </svg></a>
+          </li>
+          <li class="soc">
+            <a class="social-button" href="#"
+              ><svg class="social-btn" width="12" height="22" viewBox="0 0 12 22"  xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" />
+                </svg></a>
+          </li>
+          <li class="soc">
+            <a class="social-button" href="#"
+            ><svg class="social-btn" width="20" height="16" viewBox="0 0 20 16"  xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
         </section>
       <section>
         <p>
