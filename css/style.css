@@ -243,25 +243,23 @@ img {
 .html-academy:active {
   opacity: 0.3;
 }
-
-.social-button .social-btn {
-  background-color: var(--special-blue);
+.social-button {
+  display: inline-flex;
+  justify-content: center;
   width: 46px;
   height: 48px;
-}
-.social-btn {
-  fill: var(--basic-white);
+  background-color: var(--special-blue);
 }
 
-.social-btn:hover {
+.social-icon {
+  fill:var(--basic-white);
+}
+.social-button:hover {
   background-color: var(--special-color-blue);
 }
-
-.soc {
-  display: inline-block;
-  justify-content: center;
-}
-.social-btn:active {
+.social-button:active, 
+.social-icon:active
+{
   background-color: var(--special-color-dark-blue);
   fill: var(--test-color-2);
 }
@@ -413,16 +411,20 @@ img {
   color: var(--test-color);
 }
 
-.container-choice-hotels {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ .container-choice-hotels {
+   display: grid;
+   grid-template-columns: 20% 20% 90%;
+   text-align: center;
+
  }
- 
  .stars {
   color: var(--special-blue);
 }
+.container-subtitle {
+  display: flex;
+  justify-content: space-between;
 
+}
 
 .container-hotels {
   list-style: none;
