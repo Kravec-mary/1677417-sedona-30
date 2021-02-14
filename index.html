@@ -13,10 +13,10 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="page-navigation">
-          <li><a class="page-navigation-link" href="#">Информация</a></li>
-          <li><a class="page-navigation-link" href="#">Фото и видео</a></li>
-          <li><a class="page-navigation-link" href="#">Карта штата</a></li>
-          <li><a class="page-navigation-link" href="hotels.html">Гостиницы</a></li>
+          <li><a class="page-navigation-link information" href="#">Информация</a></li>
+          <li><a class="page-navigation-link photo-and-video" href="#">Фото и видео</a></li>
+          <li><a class="page-navigation-link map-of-the-state" href="#">Карта штата</a></li>
+          <li><a class="page-navigation-link the-hotel" href="hotels.html">Гостиницы</a></li>
         </ul>
         <a class="sedona-logo" href="index.html">
           <img
@@ -31,7 +31,7 @@
     <main class="container">
       <section class="heading">
         <h1 class="heading-welcome">
-          <img src="img/title-logo.svg" width="457" height="351" alt="welcome to the gorgeous sedona">
+          <img class="welcome" src="img/title-logo.svg" width="457" height="351" alt="welcome to the gorgeous sedona">
         </h1>
       </section>
       <section class="five-reasons">
@@ -55,14 +55,17 @@
             </div>
             <ul class="features-list">
               <li class="feature-item">
+                <img src="img/house-icon.svg">
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="feature-item">
+                <img src="img/food-icon.svg">
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="feature-item">
+                <img src="img/gift-icon.svg">
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
@@ -118,20 +121,37 @@
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <button class="btn" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <section class="choice-date">
+        <form class="choice-date-form" method="post">
+          <fieldset class="search">
+          <p class="choice-item choice-item-arrival"><label for="arrival-date">Дата заезда:</label>
+          <input type="date" name="arrival" id="arrival-date" placeholder="24 апреля 2017"></p>
+          <p class="choice-item"><label for="departure-date">Дата выезда:</label>
+          <input type="date" name="departure" id="departure-date" placeholder="4 июля 2017"></p>
+          <div class="age"><p class="choice-age-item"><label for="quantity-adults">Взрослые:</label>
+          <input type="number" name="adults" id="quantity-adults" placeholder="2"></p>
+          <p class="choice-age-item"><label for="quantity-childrens">Дети:</label>
+          <input type="number" name="childrens" id="quantity-childrens" placeholder="0"></p>
+        </div>
+        </form>
+        <button class="find-btn" type="submit">Найти</button>
+      </fieldset>
+      </section>
         <!---- Здесь будет форма записи и карта
         <img src="" width="1199" height="594" alt="location map"> ----->
-      </section>
+     
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <h2>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
         <p>
           #visitsedona<br />
           Тел: <a class="footer-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
         </p>
       </section>
       <section class="socials">
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li class="soc">
             <a class="social-button" href="#"

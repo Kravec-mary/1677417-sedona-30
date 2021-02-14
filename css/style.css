@@ -15,7 +15,10 @@
   --special-color-blue: #669EC0;
   --special-color-dark-blue: #5496BD;
   --special-color-dark-white: #F2F2F2;
+  --special-color-light-grey: #EBEBEB;
   --special-gray: #BDBBBC;
+  --color-white: #EEEEEE;
+
  }
 
 @font-face {
@@ -82,6 +85,20 @@
   list-style: none;
   align-items: center;
 }
+.map-of-the-state {
+  position: relative;
+  left: 147px;
+}
+.photo-and-video {
+  position: relative;
+  right: 133px;
+}
+
+.sedona-logo {
+  position: absolute;
+  left: 571px;
+  
+}
 
 a {
   text-decoration: none;
@@ -90,6 +107,11 @@ img {
   max-width: 100%;
   height: auto;
 
+}
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 .main-header {
   margin-bottom: 0;
@@ -107,22 +129,28 @@ img {
 }
 
 .heading {
-  min-height: 509px;
+  min-height: 452px;
   width: 1200px;
   background-color: var(--special-blue);
-  background-image: url(../img/sedona-1page-background.jpg);
+  background-image: url(../img/sedona-1page-background.jpg); 
   background-size: 1200px 509px;
   text-align: center;
+  color:var(--basic-black);
   
+}
+.welcome {
+  margin-top: 77px;
 }
 
 .headline {
-  color:var(--basic-black);
   text-align: center;
+  color:var(--basic-black);
+  margin-top: 42px;
 }
 
 .subtitle-p {
   text-align: center;
+  margin-bottom: 51px;
 }
 
 .five-reasons {
@@ -144,11 +172,16 @@ img {
   display:grid;
   justify-items: center;
   align-items: center;
+  width: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
+
 .features-list {
   display: flex;
   justify-content: space-around;
-  
+  margin-bottom: 82px;
 }
 
 .reason-item-with-pic h3 {
@@ -162,10 +195,16 @@ img {
   font-weight: 700;
   color:var(--basic-black)  
 }
+
 .container-reasons-2 {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  background-color: var(--color-white);
+  width: 1200px;
+  height: 256px;
+  text-align: center;
+  padding-top: 47px;
 }
 
 .feature-item {
@@ -178,6 +217,7 @@ img {
   font-weight: 400;
   padding: 0;
   text-align: center;
+  margin-top: 60px;
 
 }
 .feature-item h3 {
@@ -193,7 +233,9 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  margin-top: 58px;
+   
 }
 
 /* кнопка поиск гостиницы */
@@ -206,6 +248,10 @@ img {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 568px;
+  height: 86px;
+  margin-top: 24px;
+
 }
 .btn:hover {
   background-color: #604E43;
@@ -214,7 +260,70 @@ img {
   background-color: var(--special-brown-dark);
   color: rgba(255,255,255,0.3);
 }
+.choice-date {
+  width: 1199px;
+  height: 475px;
+  background-image: url(../img/map.jpg);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color:var(--basic-black);
 
+}
+.choice-date-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.choice-item input{
+ background-color: var(--special-color-dark-white);
+ text-transform: uppercase;
+ width: 346px;
+ height: 38px;
+}
+.choice-item-arrival input:hover {
+  background-color: var(--special-color-light-grey);
+}
+.choice-item-arrival input:focus {
+  background-color: var(--basic-white);
+}
+.choice-age-item input {
+ background-color: var(--special-color-dark-white);
+ text-transform: uppercase;
+ width: 114px;
+ height: 38px;
+}
+
+.age {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search {
+  background-color: var(--basic-white);
+  width: 568px;
+  height: 395px;
+  position: absolute;
+  left: 356px;
+
+}
+.find-btn {
+  width: 458px;
+  height: 58px;
+  background-color: var(--special-blue);
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.find-btn:hover {
+  background-color: var(--special-color-blue);
+}
+.find-btn:active {
+  background-color: var(--special-color-dark-blue);
+  color: var(--test-color-2);
+}
 /* footer */
 
 .contacts {
@@ -244,11 +353,20 @@ img {
   opacity: 0.3;
 }
 .social-button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: var(--special-blue);
+}
+.socials ul {
+  display: flex;
+  justify-content: space-between;
+}
+.soc {
+  position: relative;
+  margin-left: 6px;
 }
 
 .social-icon {
@@ -257,10 +375,10 @@ img {
 .social-button:hover {
   background-color: var(--special-color-blue);
 }
-.social-button:active, 
-.social-icon:active
-{
+.social-button:active {
   background-color: var(--special-color-dark-blue);
+}
+.social-button:active path {
   fill: var(--test-color-2);
 }
 
@@ -301,6 +419,7 @@ img {
 ::-webkit-input-placeholder{
   color: var(--basic-white);
 }
+
 .prise-range-choice {
   list-style: none;
   color: var(--basic-white);
