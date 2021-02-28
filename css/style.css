@@ -94,6 +94,14 @@
 .item-map-of-state {
   margin-right: 13px;
 }
+.page-navigation-hotels,
+.page-navigation-hotels:hover,
+.page-navigation-hotels:focus,
+.page-navigation-hotels:active
+ {
+  color: var(--special-brown);
+}
+
 .sedona-logo {
   position: absolute;
   left: 50%;
@@ -690,7 +698,8 @@ fieldset {
 }
 .filtering {
   background-color: var(--special-blue);
-  background-image: url(../img/sedona-2page-background.jpg)
+  background-image: url(../img/sedona-2page-background.jpg);
+  padding-bottom: 21px;
 }
 .filter-item {
   list-style: none;
@@ -717,6 +726,7 @@ fieldset {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
 }
+
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -727,9 +737,15 @@ fieldset {
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
 }
+.filter-input-checkbox:checked:focus + label::after,
+.filter-input-checkbox:focus + label::before {
+  outline: 2px solid red;
+}
+
 .filter-input-checkbox label{
   padding-top: 50px;
 }
+
 .title-filters {
   color: var(--basic-white);
   font-size: 16px;
@@ -944,8 +960,10 @@ fieldset {
 .arrow:active {
   color: var(--special-blue);
 }
+.arrow-second {
+  color: var(--special-blue);
+}
 .container-arrow {
-  
   list-style: none;
 }
 .title-name {
@@ -991,7 +1009,14 @@ fieldset {
   margin-left: 13px;
 }
 .amara-resort-1 {
-  padding-top: 25px;
+  padding-top: 31px;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: -8px 0px;
+  background-size: 1255px 1px;
+  margin-left: -53px;
+  padding-left: 56px;
+  margin-top: -6px;
 }
 .amara-resort-1 h3 {
   margin-top: -5px;
@@ -1035,7 +1060,13 @@ fieldset {
   color:var(--basic-dark);
 }
 .desert-quail-2 {
-  margin-top: 55px;
+  margin-top: 19px;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: 9px 5px;
+  padding-top: 37px;
+  padding-left: 64px;
+  margin-left: -62px;
 }
 .desert-quail-2 h3 {
   margin-top: -6px;
@@ -1071,12 +1102,17 @@ fieldset {
   
 }
 .villas-3 {
-  margin-top: 56px;
-  margin-left: 3px;
+  margin-top: 22px;
+  margin-left: -52px;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: 0px 1px;
+  padding-top: 33px;
+  padding-left: 56px;
 }
 .villas-3 h3 {
   margin-top: -6px;
-  margin-left: 11px;
+  margin-left: 10px;
 }
 .hotel-rating-3 {
   margin-right: -492px;
@@ -1146,7 +1182,11 @@ fieldset {
   width: 1200px;
   background-color: var(--test-color-3);
   text-align:center;
-  margin-top: 13px;
+  margin-top: 9px;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  padding-top: 3px;
 }
 
 .visit-sedona-2-page {
