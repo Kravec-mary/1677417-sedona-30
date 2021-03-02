@@ -1012,6 +1012,7 @@ fieldset {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  
 }
 .title-name:hover {
   color: var(--special-blue);
@@ -1153,7 +1154,7 @@ fieldset {
 }
 .villas-3 h3 {
   margin-top: -6px;
-  margin-left: 10px;
+  margin-left: 9px;
 }
 .hotel-rating-3 {
   margin-right: -492px;
