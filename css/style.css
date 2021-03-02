@@ -1023,7 +1023,7 @@ fieldset {
 
 .container-choice-hotels {
   display: grid;
-  grid-template-columns: 15% 20% 65%;
+  grid-template-columns: 15% 21% 64%;
   text-align: center;
  }
 .stars-1 {
@@ -1062,13 +1062,14 @@ fieldset {
 }
 .amara-resort-1 h3 {
   margin-top: -5px;
+  margin-left: -14px;
 }
 .subtitle-1 {
-  padding-left: 12px;
+  padding-left: 11px;
   margin-top: -15px;
 }
 .subtitle-2 {
-  padding-left: 40px;
+  padding-left: 39px;
   margin-top: -16px;
 }
 .conttainer-rating-stars {
@@ -1083,7 +1084,7 @@ fieldset {
 }
 .hotel-rating-1 {
   padding: 5px 14px;
-  margin-left: 493px;
+  margin-left: 481px;
 }
 .stars-2 {
   position: absolute;
@@ -1112,18 +1113,18 @@ fieldset {
 }
 .desert-quail-2 h3 {
   margin-top: -6px;
-  margin-left: -32px;
+  margin-left: -46px;
 }
 .subtitle-desert-1 {
-  padding-left: 13px;
+  padding-left: 12px;
   margin-top: -15px;
 }
 .subtitle-desert-2 {
-  padding-left: 64px;
+  padding-left: 63px;
   margin-top: -14px;
 }
 .hotel-rating-2 {
-  margin-right: -494px;
+  margin-right: -481px;
   padding: 5px 14px;
 
 }
@@ -1145,7 +1146,7 @@ fieldset {
 }
 .villas-3 {
   margin-top: 22px;
-  margin-left: -52px;
+  margin-left: -54px;
   background-image: url(../img/Rectangle.png);
   background-repeat: no-repeat;
   background-position: 0px 1px;
@@ -1154,10 +1155,10 @@ fieldset {
 }
 .villas-3 h3 {
   margin-top: -6px;
-  margin-left: 9px;
+  margin-left: 1px;
 }
 .hotel-rating-3 {
-  margin-right: -492px;
+  margin-right: -481px;
   padding: 5px 14px;
 }
 .container-rating-stars-2 {
