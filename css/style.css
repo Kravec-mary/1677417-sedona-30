@@ -379,12 +379,23 @@ img {
   background-color: var(--special-brown-dark);
   color: rgba(255,255,255,0.3);
 }
+.map-src { 
+  position: absolute;
+  border: 0;
+  bottom: 599px;
+  z-index: 1;
+}
+  
+.location-map-img {
+  position: relative;
+} 
+
 .choice-date {
   position: absolute;
-  bottom: 205px;
-  left: 50%;
+  bottom: 802px;
+  left: 50.1%;
   margin-left: -284px;
-  z-index: 10;
+  /* z-index: 10; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -394,13 +405,14 @@ img {
   border: 0;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
   box-sizing: border-box;
-
+  z-index: 2;
+}
+.choice-date-close {
+  display: none;
 }
 fieldset {
   border: 0;
 }
-
-
 .choice-item-arrival {
    padding-top: 54px;
    padding-left: 44px;
@@ -460,9 +472,7 @@ fieldset {
 .age input {
   width: 27px;
   height: 18px;
-  /* margin-left: 0px; */
   margin-right: -4px;
-  /* margin-bottom: 56px; */
   padding-bottom: 11px;
   padding-left: 5px;
   background-color:var(--special-color-dark-white);
@@ -596,6 +606,7 @@ fieldset {
   border: 0;
   margin-top: 54px;
   padding-top: 2px;
+  margin-left: 53px;
   
 }
 .choice-item {
@@ -638,12 +649,14 @@ fieldset {
   display: flex;
   justify-content: space-around;
   position: absolute;
+  z-index: 1;
   width: 1200px;
   top: 2642px;
   background-color: var(--test-color-3);
   text-align:center;
   padding-bottom: 14px;
 }
+
 .footer-phone {
   color: inherit;
   
@@ -850,7 +863,18 @@ fieldset {
   top: 53px;
   cursor: pointer;
 }
-
+.range-controls .toggle:hover {
+  width: 4.5px;
+  height: 4.5px;
+  padding: 0;
+  border: 9px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.30);
+  position: absolute;
+  top: 53px;
+  cursor: pointer;
+} 
 .range-controls .toggle-min { 
   left: 10px;
 }
