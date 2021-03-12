@@ -92,8 +92,9 @@
   padding-right: 15px;
 }
 .item-map-of-state {
-  margin-right: 13px;
+  margin-right: 12px;
 }
+
 .page-navigation-hotels,
 .page-navigation-hotels:hover,
 .page-navigation-hotels:focus,
@@ -165,11 +166,13 @@ img {
   line-height: 26px;
   font-weight: 700;
   
+  
 }
 
 .subtitle-p {
   text-align: center;
   padding-top: 32px; 
+  
 }
 
 .five-reasons {
@@ -177,7 +180,8 @@ img {
   text-transform: uppercase;
   color: var(--basic-dark);
 }
-.reason-true-town {
+/*.
+ {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: var(--special-blue);
@@ -187,6 +191,8 @@ img {
   max-width: 1200px;
   margin-top: 54px;
 }
+*/
+
 .reason-item-divels-bridge {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -195,37 +201,51 @@ img {
   list-style: none;
   max-width: 1200px;
   margin-top: -6px;
+  margin-left: -40px;
 }
 .reason-item-divels-bridge h3 {
   padding-top: 5px;
 }
 .container-1-element {
-  display:grid;
-  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--special-blue);
+  color: var(--basic-white);
+  list-style: none;
+  margin-left: -40px;
+  max-width: 1200px;
+  margin-top: 54px;
   text-align: center;
-  margin-top: 25px;
   margin-bottom: 31px;
+  max-height: 256px;
 }
-
+.container-2-element {
+  text-align: center;
+}
+.container-2-element p {
+  padding-top: 12px;
+}
 .features-list {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-left: 58px;
-  
-  margin-bottom: -20px; 
+  padding-left: 21px;
+  margin-bottom: -19px;
+  margin-top: -18px;
 }
 .house-item {
   background-image: url(../img/house-icon.svg);
   background-repeat: no-repeat;
-  background-position: 103px 46px;
+  background-position: 102px 45px;
   
 }
 
 .house-item p {
-  padding-top: 4px;
+  
   margin-left: 14px;
   width: 254px;
+  padding-top: 4px;
+  
 }
 .house-item h3 {
   padding-left: 11px;
@@ -236,7 +256,7 @@ img {
   background-repeat: no-repeat;
   margin-left: -3px;
   width: 297px;
-  background-position: 117px 46px; 
+  background-position: 116px 47px; 
   
 }
 .food-item h3 {
@@ -250,7 +270,7 @@ img {
 .gift-item {
   background-image: url(../img/gift-icon.svg);
   background-repeat: no-repeat;
-  background-position: 102px 40px;
+  background-position: 103px 41px;
   width: 269px;
   padding-right: 66px;
   
@@ -273,7 +293,7 @@ img {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  padding-top: 146px;
+  padding-top: 95px;
   margin-bottom: 87px; 
   
 }
@@ -285,52 +305,84 @@ img {
   margin-left: 0px;
   
 }
-
+.reason-item-with-pic {
+  list-style: none;
+}
 .reason-item-with-pic h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-
+  margin-top: 47px;
 }
 .reason-item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  color:var(--basic-black);
   width: 120px;
-  padding-left: 67px; 
-  margin-bottom: 25px;
   
 }
 .reason-item p{
   text-align: center;
-  padding-bottom: 40px;
-  margin-top: 22px;
+  padding-bottom: 39px;
 
 }
-.reason-item {
-  padding-top: 26px;
-
+.reason-town p {
+  margin-top: 29px;
+ 
 }
-.reason-item span {
+.reason-3 span {
   padding-top: 10px;
+  margin-left: 114px;
 }
 .reason-3 {
   max-width: 207px;
-  padding-left: 96px;  
+  
 }
 .reason-3 h3 {
   padding-left: 45px;
   padding-top: 2px;
+  margin-left: 56px;
+  margin-bottom: 26px;
+}
+.reason-3 p {
+  margin-right: -79px;
+  margin-left: 35px;
+  margin-top: 22px;
 }
 .reason-4 {
   max-width: 258px;
   padding-left: 74px;
 }
-
+.reason-4 h3 {
+  margin-left: 40px;
+  margin-top: 22px;
+  margin-bottom: 26px;
+}
+.reason-4 p {
+  margin-top: 23px;
+  margin-right: 53px;
+  margin-left: -29px;
+  width: 258px;
+}
+.reason-4 span {
+  margin-right: 57px;
+}
 .reason-5 {
   max-width: 246px;
   padding-left: 77px;
+}
+.reason-5 h3 {
+  margin-left: 50px;
+  margin-top: 22px;
+  margin-bottom: 26px;
+}
+.reason-5 p {
+  margin-top: 24px;
+  margin-left: -19px;
+  width: 258px;
+}
+.reason-5 span {
+  margin-right: 25px;
 }
 .container-reasons-2 {
   display: grid;
@@ -339,7 +391,10 @@ img {
   text-align: center;
   background-color: var(--color-white) ;
   margin-bottom: 3px;
+  padding-top: 25px;
+  margin-left: -40px;
 }
+
 .appointment {
   text-align: center;
   
@@ -947,7 +1002,7 @@ fieldset {
   padding-top: 2px;
 }
  
-.test {
+.list-filter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;

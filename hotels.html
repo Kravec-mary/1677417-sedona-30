@@ -29,7 +29,7 @@
     <main>
       <section class="filtering">
         <form method="get" action="https://echo.htmlacademy.ru/" target="_blank">
-            <div class="container-filters">
+          <div class="container-filters">
           <fieldset class="infrastructure">
             <legend class="title-filters">Инфраструктура:</legend>
             <ul class="filters-list">
@@ -46,8 +46,8 @@
                 <label for="filter-wifi">Wi-fi</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="type-of-house">
+           </fieldset>
+           <fieldset class="type-of-house">
             <legend class="title-filters">Тип жилья:</legend>
             <ul class="filters-list">
               <li class="filter-item">
@@ -68,25 +68,26 @@
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="price-per-day"> 
-            <legend class="title-filters">Стоимость в сутки (Р):</legend>
-            <div class="prise-range-choice">
-              <input type="text" class="prise-range" name="zero" placeholder="от 0" id="from-zero" aria-label="минимальная стоимость в сутки от 0">
-              <input type="text" class="prise-range" name="three thousand" placeholder="до 3000" id="till-three-thousand" aria-label="максимальная стоимость в сутки до 3000">
-            </div>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
+           </fieldset>
+           <fieldset class="price-per-day"> 
+             <legend class="title-filters">Стоимость в сутки (Р):</legend>
+             <div class="prise-range-choice">
+               <input type="text" class="prise-range" name="zero" placeholder="от 0" id="from-zero" aria-label="минимальная стоимость в сутки от 0">
+               <input type="text" class="prise-range" name="three thousand" placeholder="до 3000" id="till-three-thousand" aria-label="максимальная стоимость в сутки до 3000">
+        </div>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale"></div>
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-min">
                 <div class="toggle toggle-max"></div>
               </div>
             <button class="filter-btn" type="submit" value="https://echo.htmlacademy.ru/">Показать</button>
+           
+          </fieldset>
           </div>
-        </fieldset>
-      </form>
+        </form>
       </section>
       <section>
           <div class="container-found-filters">
@@ -95,20 +96,20 @@
         <div><span class="result">3</span></div>
         <div><p class="paragraph">Сортировка:</p></div>
          </div>
+          </div>
          <div class="container-btn-filter"> 
-        <ul class="test">
-          <li class="btn-choice">
-            <button class="btn-filter-choice-price btn-filter-choice" type="button" aria-label="сортировка жилья по цене">По цене</button>
-          </li>
+           <ul class="list-filter">
+            <li class="btn-choice">
+               <button class="btn-filter-choice-price btn-filter-choice" type="button" aria-label="сортировка жилья по цене">По цене</button>
+            </li>
           <li class="btn-choice">
             <button class="btn-filter-choice-type btn-filter-choice" type="button" aria-label="сортировка жилья по типу">По типу</button>
           </li>
           <li class="btn-choice">
             <button class="btn-filter-choice-rating btn-filter-choice" type="button" aria-label="сортировка жилья по рейтингу">По рейтингу</button>
           </li>
+         </ul>
         </div>
-  
-        </ul>
         <div>
         <ul class="container-arrow">
           <li>
@@ -119,34 +120,35 @@
           </li>
         </ul>
       </div>
-      </div>
+      
         <ul class="container-hotels">
           <li class="amara-resort-1">
-            <div class="container-choice-hotels">  
-            <div><img
-              src="img/amara-resort.jpg"
-              width="135"
-              height="90"
-              alt="Amara resort & spa"
-            /></div>
-            <div>
-              <a href="#"> <h3 class="title-name">Amara resort & spa</h3></a>
-              <div class="container-subtitle">
-              <p class="subtitle-1">Гостиница</p>
-              <p class="subtitle-2">от 4000 Р.</p>
+               <div class="container-choice-hotels">  
+                   <div><img
+                      src="img/amara-resort.jpg"
+                      width="135"
+                      height="90"
+                      alt="Amara resort & spa">  
+                    </div>
+                   <div>
+                   <a href="#"> <h3 class="title-name">Amara resort & spa</h3></a>
+                    <div class="container-subtitle">
+                     <p class="subtitle-1">Гостиница</p>
+                     <p class="subtitle-2">от 4000 Р.</p>
+                 </div>
+                 <div class="container-btn">
+                   <button class="btn-detail" type="button" aria-label="узнать подробнее о гостинице amara resort & spa">Подробнее</button>
+                   <button class="btn-book" type="button" aria-label="забронировать гостиницу amara resort & spa">Забронировать</button>
+                 </div>
+                 </div>
               </div>
-              <div class="container-btn">
-              <button class="btn-detail" type="button" aria-label="узнать подробнее о гостинице amara resort & spa">Подробнее</button>
-              <button class="btn-book" type="button" aria-label="забронировать гостиницу amara resort & spa">Забронировать</button>
-              </div>
-            </div>
-        <div>
-            <div class="container-rating-stars">
-            <div class="stars-1"> </div>
-            <p class="hotel-rating hotel-rating-1">Рейтинг: 8,5</p>
-          </div>
-        </div> 
-          </li>
+              <div>
+              <div class="container-rating-stars">
+              <div class="stars-1"> </div>
+                <p class="hotel-rating hotel-rating-1">Рейтинг: 8,5</p>
+             </div>
+              </div> 
+           </li>
           <li class="desert-quail-2">
             <div class="container-choice-hotels">    
             <div><img
@@ -196,6 +198,7 @@
             <div class="container-rating-stars-2">
             <div class="stars-3"> </div>
             <p class="hotel-rating hotel-rating-3">Рейтинг: 9,2</p>
+           </div>
            </div>
            </div>
           </li>
