@@ -907,7 +907,7 @@ fieldset {
   list-style: none;
   color: var(--basic-white);
 }
-.range-controls .toggle {
+.toggle {
   width: 4px;
   height: 4px;
   padding: 0;
@@ -919,6 +919,40 @@ fieldset {
   top: 53px;
   cursor: pointer;
 }
+.toggle:hover {
+  width: 4.5px;
+  height: 4.5px;
+  padding: 0;
+  border: 9px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.30);
+  position: absolute;
+  top: 53px;
+  cursor: pointer;
+}
+.toggle-min { 
+  left: 10px;
+}
+
+.toggle-max {
+  left: 263px;
+}
+/*
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 -1px  rgba(171, 171, 171, 0.30);
+  position: absolute;
+  top: 53px;
+  cursor: pointer;
+  
+}
+
 .range-controls .toggle:hover {
   width: 4.5px;
   height: 4.5px;
@@ -938,7 +972,7 @@ fieldset {
 .range-controls .toggle-max {
   left: 263px;
 }
-
+*/
 .filter-btn {
   background: transparent;
   color: var(--basic-white);
@@ -1139,13 +1173,14 @@ fieldset {
   margin-left: -53px;
   padding-left: 56px;
   margin-top: -6px;
+  
 }
 .amara-resort-1 h3 {
   margin-top: -5px;
-  margin-left: -14px;
+  margin-left: -15px;
 }
 .subtitle-1 {
-  padding-left: 11px;
+  padding-left: 9px;
   margin-top: -15px;
 }
 .subtitle-2 {
@@ -1193,10 +1228,10 @@ fieldset {
 }
 .desert-quail-2 h3 {
   margin-top: -6px;
-  margin-left: -46px;
+  margin-left: -48px;
 }
 .subtitle-desert-1 {
-  padding-left: 12px;
+  padding-left: 11px;
   margin-top: -15px;
 }
 .subtitle-desert-2 {
@@ -1210,7 +1245,7 @@ fieldset {
 }
 .subtitle-villas-1 {
   margin-top: -16px;
-  padding-left: 10px;
+  padding-left: 9px;
 }
 .subtitle-villas-2 {
   margin-top: -15px;
@@ -1218,6 +1253,9 @@ fieldset {
 }
 .container-rating-stars-1 {
   margin-top: 66px;
+}
+.container-rating-stars-1 p {
+  margin-top: 30px;
 }
 .container-btn {
   display: flex;
@@ -1235,7 +1273,7 @@ fieldset {
 }
 .villas-3 h3 {
   margin-top: -6px;
-  margin-left: 1px;
+  margin-left: -1px;
 }
 .hotel-rating-3 {
   margin-right: -481px;
@@ -1267,7 +1305,7 @@ fieldset {
   margin-right: 6px;
   padding-left: 18px;
   padding-right: 16px;
-  margin-left: -1px;
+  margin-left: -2px;
 
 }
 .btn-detail:hover {
