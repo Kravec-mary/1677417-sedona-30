@@ -1,45 +1,45 @@
 /* Variables */
 :root {
-  --basic-black: #000000; 
+  --basic-black: #000000;
   --basic-dark: #333333;
-  --basic-white: #FFFFFF;
-  --special-blue: #81B3D2;
+  --basic-white: #ffffff;
+  --special-blue: #81b3d2;
   --special-brown: #766357;
-  --special-brown-2: #604E43;
-  --special-brown-dark: #503E33;
+  --special-brown-2: #604e43;
+  --special-brown-dark: #503e33;
   --grey: #666666;
-  --special-grey-1: #6A6A6A;
-  --test-color: rgba(0,0,0,0.3); 
-  --test-color-2: rgba(255,255,255,0.3);
-  --test-color-3: rgba(255,255,255,0.9);
-  --special-color-light-gray: #CACACA;
-  --special-color-blue: #669EC0;
-  --special-color-dark-blue: #5496BD;
-  --special-color-dark-white: #F2F2F2;
-  --special-color-light-grey: #EBEBEB;
-  --special-gray: #BDBBBC;
-  --color-white: #EEEEEE;
-  --special-grey-2: #A9A9A9;
+  --special-grey-1: #6a6a6a;
+  --test-color: rgba(0, 0, 0, 0.3);
+  --test-color-2: rgba(255, 255, 255, 0.3);
+  --test-color-3: rgba(255, 255, 255, 0.9);
+  --special-color-light-gray: #cacaca;
+  --special-color-blue: #669ec0;
+  --special-color-dark-blue: #5496bd;
+  --special-color-dark-white: #f2f2f2;
+  --special-color-light-grey: #ebebeb;
+  --special-gray: #bdbbbc;
+  --color-white: #eeeeee;
+  --special-grey-2: #a9a9a9;
   --special-color-gray: rgba(0, 0, 0, 0.25);
-  --color-brown: #ABABAB;
+  --color-brown: #ababab;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("PT Sans"), local("PTSans")
-       url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsans.woff") format("woff");
+  src: local("PT Sans"),
+    local("PTSans") url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 }
 @font-face {
   font-family: "PT Sans-Bold";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("PT Sans-Bold"), local("PTSans-Bold")
-       url("PTSans-Bold.woff2") format("woff2"),
-       url("PTSans-Bold.woff") format("woff");
+  src: local("PT Sans-Bold"),
+    local("PTSans-Bold") url("PTSans-Bold.woff2") format("woff2"),
+    url("PTSans-Bold.woff") format("woff");
 }
 .page-body {
   margin: 0;
@@ -65,7 +65,6 @@
 
 .page-navigation-link:hover {
   color: var(--special-blue);
-
 }
 .page-navigation-link:active {
   color: var(--test-color);
@@ -74,7 +73,6 @@
 .current-page-navigaion-link {
   color: var(--special-brown);
 }
-
 
 .page-navigation {
   display: flex;
@@ -98,8 +96,7 @@
 .page-navigation-hotels,
 .page-navigation-hotels:hover,
 .page-navigation-hotels:focus,
-.page-navigation-hotels:active
- {
+.page-navigation-hotels:active {
   color: var(--special-brown);
 }
 
@@ -118,7 +115,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-
 }
 .visually-hidden {
   position: absolute;
@@ -136,7 +132,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   display: grid;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
 .heading {
@@ -144,35 +140,30 @@ img {
   width: 1200px;
   background-color: var(--special-blue);
   background-image: url(../img/sedona-part-of-background-2.png),
-  url(../img/sedona-1page-background.jpg); 
+    url(../img/sedona-1page-background.jpg);
   background-position: bottom, top;
   background-repeat: no-repeat;
   text-align: center;
-  color:var(--basic-black);
-  
+  color: var(--basic-black);
 }
 .welcome {
   margin-top: 76px;
-
 }
 
 .headline {
   text-align: center;
-  color:var(--basic-black);
+  color: var(--basic-black);
   margin-top: 35px;
   margin-bottom: 10px;
   padding-top: 8px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  
-  
 }
 
 .subtitle-p {
   text-align: center;
-  padding-top: 32px; 
-  
+  padding-top: 32px;
 }
 
 .five-reasons {
@@ -180,19 +171,6 @@ img {
   text-transform: uppercase;
   color: var(--basic-dark);
 }
-/*.
- {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: var(--special-blue);
-  color: var(--basic-white);
-  list-style: none;
-  margin-left: -40px;
-  max-width: 1200px;
-  margin-top: 54px;
-}
-*/
-
 .reason-item-divels-bridge {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -237,15 +215,12 @@ img {
   background-image: url(../img/house-icon.svg);
   background-repeat: no-repeat;
   background-position: 102px 45px;
-  
 }
 
 .house-item p {
-  
   margin-left: 14px;
   width: 254px;
   padding-top: 4px;
-  
 }
 .house-item h3 {
   padding-left: 11px;
@@ -256,8 +231,7 @@ img {
   background-repeat: no-repeat;
   margin-left: -3px;
   width: 297px;
-  background-position: 116px 47px; 
-  
+  background-position: 116px 47px;
 }
 .food-item h3 {
   padding-top: 3px;
@@ -273,12 +247,9 @@ img {
   background-position: 103px 41px;
   width: 269px;
   padding-right: 66px;
-  
-  
 }
-.gift-item p{
+.gift-item p {
   padding-top: 3px;
- 
 }
 .gift-item h3 {
   padding-top: 4px;
@@ -288,14 +259,13 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   list-style: none;
-  color:var(--basic-dark);
+  color: var(--basic-dark);
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
   padding-top: 95px;
-  margin-bottom: 87px; 
-  
+  margin-bottom: 87px;
 }
 
 .feature-item h3 {
@@ -303,7 +273,6 @@ img {
   font-size: 21px;
   margin-top: -4px;
   margin-left: 0px;
-  
 }
 .reason-item-with-pic {
   list-style: none;
@@ -319,16 +288,13 @@ img {
   line-height: 21px;
   font-weight: 700;
   width: 120px;
-  
 }
-.reason-item p{
+.reason-item p {
   text-align: center;
   padding-bottom: 39px;
-
 }
 .reason-town p {
   margin-top: 29px;
- 
 }
 .reason-3 span {
   padding-top: 10px;
@@ -336,7 +302,6 @@ img {
 }
 .reason-3 {
   max-width: 207px;
-  
 }
 .reason-3 h3 {
   padding-left: 45px;
@@ -389,7 +354,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   text-align: center;
-  background-color: var(--color-white) ;
+  background-color: var(--color-white);
   margin-bottom: 3px;
   padding-top: 25px;
   margin-left: -40px;
@@ -397,8 +362,6 @@ img {
 
 .appointment {
   text-align: center;
-  
-
 }
 .appointment-title {
   font-size: 30px;
@@ -414,9 +377,8 @@ img {
 /* кнопка поиск гостиницы */
 
 .btn {
-
   background-color: var(--special-brown);
-  color:var(--basic-white);
+  color: var(--basic-white);
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -426,29 +388,28 @@ img {
   margin-top: 33px;
   margin-right: -1px;
   border: 0;
-
 }
 .btn:hover {
-  background-color: #604E43;
+  background-color: #604e43;
 }
 .btn:active {
   background-color: var(--special-brown-dark);
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 .map-section {
   position: relative;
   height: 593px;
 }
-.map-src { 
+.map-src {
   position: absolute;
   border: 0;
   bottom: 599px;
   z-index: 1;
 }
-  
+
 .location-map-img {
   position: relative;
-} 
+}
 
 .choice-date {
   position: absolute;
@@ -473,9 +434,8 @@ fieldset {
   border: 0;
 }
 .choice-item-arrival {
-   padding-top: 54px;
-   padding-left: 44px;
-
+  padding-top: 54px;
+  padding-left: 44px;
 }
 .choice-item-departure {
   padding-left: 57px;
@@ -490,19 +450,18 @@ fieldset {
   display: flex;
   flex-direction: row;
 }
-.choice-item input{
- background-color: var(--special-color-dark-white);
- text-transform: uppercase;
- width: 309px;
- height: 36px;
- border: 0;
-
+.choice-item input {
+  background-color: var(--special-color-dark-white);
+  text-transform: uppercase;
+  width: 309px;
+  height: 36px;
+  border: 0;
 }
 .choice-item-arrival input {
- padding-left: 11px;
- margin-left: 5px;
- padding-right: 25px;
- margin-right: -3px;
+  padding-left: 11px;
+  margin-left: 5px;
+  padding-right: 25px;
+  margin-right: -3px;
 }
 .choice-item-arrival input:hover {
   background-color: var(--special-color-light-grey);
@@ -511,17 +470,15 @@ fieldset {
   background-color: var(--basic-white);
 }
 .inpute-item-quantity {
- background-color: var(--special-color-dark-white);
- text-transform: uppercase;
- padding-top: 10px;
- padding-bottom: 10px;
- width: 110px;
- text-align: center;
- 
+  background-color: var(--special-color-dark-white);
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 110px;
+  text-align: center;
 }
 .search input {
   border: 0;
-
 }
 .age {
   display: flex;
@@ -534,14 +491,14 @@ fieldset {
   margin-right: -4px;
   padding-bottom: 11px;
   padding-left: 5px;
-  background-color:var(--special-color-dark-white);
+  background-color: var(--special-color-dark-white);
 }
 .age button {
   border: none;
   width: 37px;
   height: 39px;
   padding-top: 9px;
-  background-color:var(--special-color-dark-white);
+  background-color: var(--special-color-dark-white);
 }
 .label-date-arrival {
   padding-right: 20px;
@@ -554,7 +511,7 @@ fieldset {
   margin-left: -2px;
 }
 .label-adult {
-  padding-right: 43px; 
+  padding-right: 43px;
   padding-right: 42px;
   margin-left: -8px;
   padding-top: 7px;
@@ -567,30 +524,30 @@ fieldset {
 }
 .calendar-1 {
   position: absolute;
-  transform: translateY(8px)translateX(438px);
+  transform: translateY(8px) translateX(438px);
   fill: var(--special-grey-2);
 }
 
 .calendar-1:hover {
-  fill:var(--basic-black);
+  fill: var(--basic-black);
 }
 .calendar-1:active {
   fill: var(--special-blue);
 }
 .calendar-2 {
- position: absolute;
- transform: translateY(8px)translateX(425px);
- fill: var(--special-grey-2);
+  position: absolute;
+  transform: translateY(8px) translateX(425px);
+  fill: var(--special-grey-2);
 }
 .calendar-2:hover {
-  fill:var(--basic-black);
+  fill: var(--basic-black);
 }
 .calendar-2:active {
   fill: var(--special-blue);
 }
-.less-first  {
+.less-first {
   position: absolute;
-  transform: translateX(-5px)translateY(-5px);
+  transform: translateX(-5px) translateY(-5px);
   fill: var(--special-grey-2);
 }
 .less-first:hover {
@@ -601,7 +558,7 @@ fieldset {
 }
 .more-first {
   position: absolute;
-  transform: translateX(-8px)translateY(-9px);
+  transform: translateX(-8px) translateY(-9px);
   fill: var(--special-grey-2);
 }
 .more-first:hover {
@@ -617,9 +574,9 @@ fieldset {
 .btn-more-1 {
   margin-left: 7px;
 }
-.less-second  {
+.less-second {
   position: absolute;
-  transform: translateX(-5px)translateY(-5px);
+  transform: translateX(-5px) translateY(-5px);
   fill: var(--special-grey-2);
 }
 .less-second:hover {
@@ -630,7 +587,7 @@ fieldset {
 }
 .more-second {
   position: absolute;
-  transform: translateX(-3px)translateY(-9px);
+  transform: translateX(-3px) translateY(-9px);
   fill: var(--special-grey-2);
 }
 .more-second:hover {
@@ -640,7 +597,7 @@ fieldset {
   fill: var(--special-blue);
 }
 .aw,
-.aw-2{
+.aw-2 {
   background-color: var(--special-color-dark-white);
 }
 .btn-more-children {
@@ -664,7 +621,6 @@ fieldset {
   margin-top: 54px;
   padding-top: 2px;
   margin-left: 53px;
-  
 }
 .choice-item {
   display: flex;
@@ -675,7 +631,7 @@ fieldset {
   font-weight: 700;
 }
 .input-item-date::placeholder {
-  color:var(--basic-black);
+  color: var(--basic-black);
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -699,7 +655,7 @@ fieldset {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color:var(--basic-black);
+  color: var(--basic-black);
   list-style: none;
 }
 .main-footer {
@@ -710,15 +666,14 @@ fieldset {
   width: 1200px;
   top: 2642px;
   background-color: var(--test-color-3);
-  text-align:center;
+  text-align: center;
   padding-bottom: 14px;
 }
 
 .footer-phone {
   color: inherit;
-  
 }
-.socials li{
+.socials li {
   list-style: none;
 }
 
@@ -736,7 +691,6 @@ fieldset {
   width: 46px;
   height: 48px;
   background-color: var(--special-blue);
-  
 }
 .socials ul {
   display: flex;
@@ -747,11 +701,10 @@ fieldset {
   right: 49px;
   margin-left: 6px;
   bottom: -23px;
-  
 }
 
 .social-icon {
-  fill:var(--basic-white);
+  fill: var(--basic-white);
 }
 .social-button:hover {
   background-color: var(--special-color-blue);
@@ -763,11 +716,11 @@ fieldset {
   fill: var(--test-color-2);
 }
 
-.logo-academy p{
-   padding-top: 37px;
-   padding-right: 171px;
-   margin-left: -39px;
- } 
+.logo-academy p {
+  padding-top: 37px;
+  padding-right: 171px;
+  margin-left: -39px;
+}
 .html-academy {
   position: absolute;
   right: 138px;
@@ -786,7 +739,6 @@ fieldset {
 .page-navigation-2-page {
   margin-bottom: -9px;
 }
-
 
 .container-filters {
   display: grid;
@@ -817,7 +769,6 @@ fieldset {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-
 }
 .filter-item label {
   position: relative;
@@ -828,11 +779,11 @@ fieldset {
 }
 .filter-input-checkbox + label::before {
   content: "";
-  position: absolute; 
+  position: absolute;
   left: -40px;
   top: 1px;
   width: 23px;
-  height: 23px; 
+  height: 23px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
 }
@@ -843,7 +794,7 @@ fieldset {
   top: 1px;
   left: -40px;
   width: 27px;
-  height: 23px; 
+  height: 23px;
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
 }
@@ -852,7 +803,7 @@ fieldset {
   outline: 2px solid red;
 }
 
-.filter-input-checkbox label{
+.filter-input-checkbox label {
   padding-top: 50px;
 }
 
@@ -883,7 +834,7 @@ fieldset {
   padding-right: 0px;
   border: none;
 }
- .prise-range-choice::before {  
+.prise-range-choice::before {
   position: absolute;
   content: "";
   border: 2px solid var(--basic-white);
@@ -914,7 +865,7 @@ fieldset {
   border: 8px solid #ffffff;
   background-color: #ababab;
   border-radius: 50%;
-  box-shadow: 0 4px 0 -1px  rgba(171, 171, 171, 0.30);
+  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.3);
   position: absolute;
   top: 53px;
   cursor: pointer;
@@ -926,53 +877,19 @@ fieldset {
   border: 9px solid #ffffff;
   background-color: #ababab;
   border-radius: 50%;
-  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.30);
+  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.3);
   position: absolute;
   top: 53px;
   cursor: pointer;
 }
-.toggle-min { 
+.toggle-min {
   left: 10px;
 }
 
 .toggle-max {
   left: 263px;
 }
-/*
-.range-controls .toggle {
-  width: 4px;
-  height: 4px;
-  padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
-  border-radius: 50%;
-  box-shadow: 0 4px 0 -1px  rgba(171, 171, 171, 0.30);
-  position: absolute;
-  top: 53px;
-  cursor: pointer;
-  
-}
 
-.range-controls .toggle:hover {
-  width: 4.5px;
-  height: 4.5px;
-  padding: 0;
-  border: 9px solid #ffffff;
-  background-color: #ababab;
-  border-radius: 50%;
-  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.30);
-  position: absolute;
-  top: 53px;
-  cursor: pointer;
-} 
-.range-controls .toggle-min { 
-  left: 10px;
-}
-
-.range-controls .toggle-max {
-  left: 263px;
-}
-*/
 .filter-btn {
   background: transparent;
   color: var(--basic-white);
@@ -985,11 +902,10 @@ fieldset {
   height: 36px;
   margin-top: 33px;
   margin-left: 85px;
-
 }
 .filter-btn:hover {
   background-color: var(--basic-white);
-  color:var(--basic-black);
+  color: var(--basic-black);
 }
 .scale {
   height: 0;
@@ -1013,7 +929,6 @@ fieldset {
   font-weight: 700;
   margin-left: 73px;
   margin-top: 24px;
-
 }
 .result {
   font-size: 21px;
@@ -1035,7 +950,7 @@ fieldset {
   justify-content: space-between;
   padding-top: 2px;
 }
- 
+
 .list-filter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1058,7 +973,6 @@ fieldset {
   padding-top: 5px;
 }
 
-
 .btn-filter-choice {
   font-size: 12px;
   line-height: 18px;
@@ -1066,7 +980,6 @@ fieldset {
   text-transform: uppercase;
   background: transparent;
   border: 0;
-  
 }
 .btn-filter-choice-price {
   color: var(--special-blue);
@@ -1078,16 +991,15 @@ fieldset {
   padding-left: 12px;
   border-bottom: 1px dotted var(--special-blue);
   padding-bottom: 0;
-  padding-left:0;
+  padding-left: 0;
   padding-right: 0;
   margin-left: 26px;
-
 }
 .btn-filter-choice-rating {
   color: var(--test-color);
   border-bottom: 1px dotted var(--special-blue);
   padding-bottom: 0;
-  padding-left:0;
+  padding-left: 0;
   padding-right: 0;
   margin-left: 16px;
 }
@@ -1095,13 +1007,12 @@ fieldset {
   color: var(--special-blue);
   border-bottom: 1px dotted;
   padding-bottom: 0;
-  padding-left:0;
+  padding-left: 0;
   padding-right: 0;
-
 }
 .btn-filter-choice-rating:active {
   color: var(--basic-black);
-  border:none;
+  border: none;
 }
 
 .arrow {
@@ -1126,7 +1037,6 @@ fieldset {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  
 }
 .title-name:hover {
   color: var(--special-blue);
@@ -1139,7 +1049,7 @@ fieldset {
   display: grid;
   grid-template-columns: 15% 21% 64%;
   text-align: center;
- }
+}
 .stars-1 {
   position: absolute;
   left: 10px;
@@ -1153,7 +1063,6 @@ fieldset {
 
 .container-rating-stars {
   margin-top: 66px;
-  
 }
 .container-subtitle {
   display: flex;
@@ -1173,7 +1082,6 @@ fieldset {
   margin-left: -53px;
   padding-left: 56px;
   margin-top: -6px;
-  
 }
 .amara-resort-1 h3 {
   margin-top: -5px;
@@ -1215,7 +1123,7 @@ fieldset {
   font-size: 14x;
   line-height: 21px;
   font-weight: 400;
-  color:var(--basic-dark);
+  color: var(--basic-dark);
 }
 .desert-quail-2 {
   margin-top: 19px;
@@ -1241,7 +1149,6 @@ fieldset {
 .hotel-rating-2 {
   margin-right: -481px;
   padding: 5px 14px;
-
 }
 .subtitle-villas-1 {
   margin-top: -16px;
@@ -1260,7 +1167,6 @@ fieldset {
 .container-btn {
   display: flex;
   margin-left: 11px;
-  
 }
 .villas-3 {
   margin-top: 22px;
@@ -1306,7 +1212,6 @@ fieldset {
   padding-left: 18px;
   padding-right: 16px;
   margin-left: -2px;
-
 }
 .btn-detail:hover {
   background-color: var(--special-color-blue);
@@ -1323,7 +1228,7 @@ fieldset {
   line-height: 21px;
   font-weight: 700;
   border: 0;
-  
+
   height: 27px;
   margin-left: -1px;
   padding-left: 17px;
@@ -1333,7 +1238,7 @@ fieldset {
   background-color: var(--special-brown-2);
 }
 .btn-book:active {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: var(--special-brown-dark);
 }
 
@@ -1342,7 +1247,7 @@ fieldset {
   justify-content: space-around;
   width: 1200px;
   background-color: var(--test-color-3);
-  text-align:center;
+  text-align: center;
   margin-top: 9px;
   background-image: url(../img/Rectangle.png);
   background-repeat: no-repeat;
@@ -1367,7 +1272,7 @@ fieldset {
   padding-left: 36px;
   margin-top: -12px;
 }
-.socials-2-page ul{
+.socials-2-page ul {
   padding-left: 43px;
   margin-top: 11px;
 }
@@ -1376,10 +1281,10 @@ fieldset {
   height: 100%;
 }
 .logo-academy-2-page {
-position: relative;;
-padding-top: 35px;
-padding-right: 173px;
-margin-left: -35px;
+  position: relative;
+  padding-top: 35px;
+  padding-right: 173px;
+  margin-left: -35px;
 }
 .choice-date {
   /* display: block; */
