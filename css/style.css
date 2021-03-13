@@ -274,6 +274,9 @@ img {
   margin-top: -4px;
   margin-left: 0px;
 }
+.item-reasons {
+  list-style: none;
+}
 .reason-item-with-pic {
   list-style: none;
 }
@@ -288,6 +291,7 @@ img {
   line-height: 21px;
   font-weight: 700;
   width: 120px;
+  color: var(--basic-black);
 }
 .reason-item p {
   text-align: center;
@@ -1066,6 +1070,7 @@ fieldset {
 }
 .container-subtitle {
   display: flex;
+  color: var(--basic-dark);
 }
 
 .container-hotels {
