@@ -1,5 +1,6 @@
 /* Variables */
 :root {
+  --basic-grey: #888888;
   --basic-black: #000000;
   --basic-dark: #333333;
   --basic-white: #ffffff;
@@ -22,6 +23,10 @@
   --special-grey-2: #a9a9a9;
   --special-color-gray: rgba(0, 0, 0, 0.25);
   --color-brown: #ababab;
+  --special-color-grey: #e5e5e5;
+  --page-shadow-color: rgba(0, 1, 1, 0.2);
+  --toggle-color: rgba(171, 171, 171, 0.3);
+  --color-red: #e32636;
 }
 @font-face {
   font-family: "PT Sans";
@@ -29,22 +34,25 @@
   font-weight: 400;
   font-display: swap;
   src: local("PT Sans"),
-    local("PTSans") url("../fonts/ptsans.woff2") format("woff2"),
+    local("PTSans"), url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
 }
 @font-face {
-  font-family: "PT Sans-Bold";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: local("PT Sans-Bold"),
-    local("PTSans-Bold") url("PTSans-Bold.woff2") format("woff2"),
+    local("PTSans-Bold"), url("PTSans-Bold.woff2") format("woff2"),
     url("PTSans-Bold.woff") format("woff");
 }
+.page {
+  background-color: var(--special-color-dark-white);
+}
 .page-body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: var(--basic-black);
   font-weight: 400;
   font-size: 14px;
@@ -56,7 +64,21 @@
   align-content: start;
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.25);
+  background-color: var(--basic-white);
+  box-shadow: 0 5px 15px var(--page-shadow-color);
+}
+.navigation-item {
+  width: 100px;
+}
+
+.navigation-item:nth-child(4n), .navigation-item:nth-child(4n-1) {
+  text-align: right;
+}
+.navigation-item:nth-child(4n-2), .navigation-item:nth-child(4n-3) {
+  text-align: left;
+}
+.navigation-item:nth-child(4n-2) {
+  margin-right: 272px;
 }
 
 .page-navigation-link {
@@ -83,8 +105,10 @@
   list-style: none;
   align-items: center;
   margin-bottom: -29px;
+  flex-wrap: wrap;
 }
 
+/*
 .item-photo-video {
   flex-grow: 0.4;
   padding-right: 15px;
@@ -92,7 +116,7 @@
 .item-map-of-state {
   margin-right: 12px;
 }
-
+*/
 .page-navigation-hotels,
 .page-navigation-hotels:hover,
 .page-navigation-hotels:focus,
@@ -139,7 +163,7 @@ img {
   min-height: 509px;
   width: 1200px;
   background-color: var(--special-blue);
-  background-image: url(../img/sedona-part-of-background-2.png),
+  background-image: url(../img/sedona-part-of-background-2.svg),
     url(../img/sedona-1page-background.jpg);
   background-position: bottom, top;
   background-repeat: no-repeat;
@@ -205,6 +229,7 @@ img {
 }
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   padding-left: 21px;
@@ -394,27 +419,42 @@ img {
   border: 0;
 }
 .btn:hover {
-  background-color: #604e43;
+  background-color: var(--special-brown-2);
 }
 .btn:active {
   background-color: var(--special-brown-dark);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--test-color-2);
 }
 .map-section {
-  position: relative;
-  height: 593px;
+  height: 594px;
 }
 .map-src {
   position: absolute;
   border: 0;
-  bottom: 599px;
+  bottom: 608px;
   z-index: 1;
 }
 
 .location-map-img {
   position: relative;
+  margin-bottom: 10px;
 }
-
+/* .section-choice-date {
+  position: absolute;
+  bottom: 198px;
+  left: 50.1%;
+  margin-left: -284px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--basic-white);
+  width: 568px;
+  min-height: 395px;
+  border: 0;
+  box-shadow: 0 5px 15px 0 var(--page-shadow-color);
+  box-sizing: border-box;
+  z-index: 2;
+} */
 .choice-date {
   position: absolute;
   bottom: 198px;
@@ -427,10 +467,11 @@ img {
   width: 568px;
   min-height: 395px;
   border: 0;
-  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px 0 var(--page-shadow-color);
   box-sizing: border-box;
   z-index: 2;
 }
+
 .choice-date-close {
   display: none;
 }
@@ -461,18 +502,24 @@ fieldset {
   height: 36px;
   border: 0;
 }
+
 .choice-item-arrival input {
   padding-left: 11px;
   margin-left: 5px;
   padding-right: 25px;
   margin-right: -3px;
 }
-.choice-item-arrival input:hover {
+
+
+.choice-item input:hover {
   background-color: var(--special-color-light-grey);
 }
-.choice-item-arrival input:focus {
+.choice-item input:focus {
   background-color: var(--basic-white);
+  outline: 2px solid var(--special-color-grey);
 }
+
+
 .inpute-item-quantity {
   background-color: var(--special-color-dark-white);
   text-transform: uppercase;
@@ -526,11 +573,19 @@ fieldset {
   padding-top: 7px;
   padding-left: 16px;
 }
+.btn-calendar-first {
+  padding-left: 17px;
+  padding-right: 17px; 
+  margin-left: -31px;
+  border: 0;
+  background-color: transparent;
+}
+
 .calendar-1 {
   position: absolute;
-  transform: translateY(8px) translateX(438px);
+  transform: translateY(-11px) translateX(-13px);
   fill: var(--special-grey-2);
-}
+} 
 
 .calendar-1:hover {
   fill: var(--basic-black);
@@ -538,9 +593,17 @@ fieldset {
 .calendar-1:active {
   fill: var(--special-blue);
 }
+.btn-calendar-second {
+  padding-left: 17px;
+  padding-right: 17px; 
+  margin-left: -34px;
+  border: 0;
+  background-color: transparent;
+}
+
 .calendar-2 {
   position: absolute;
-  transform: translateY(8px) translateX(425px);
+  transform: translateY(-11px) translateX(-13px);
   fill: var(--special-grey-2);
 }
 .calendar-2:hover {
@@ -574,9 +637,11 @@ fieldset {
 .btn-less-1 {
   margin-left: -2px;
   margin-right: 2px;
+  
 }
 .btn-more-1 {
   margin-left: 7px;
+  
 }
 .less-second {
   position: absolute;
@@ -646,6 +711,7 @@ fieldset {
   line-height: 26px;
   font-weight: 700;
 }
+
 .find-btn:hover {
   background-color: var(--special-color-blue);
 }
@@ -661,8 +727,10 @@ fieldset {
   font-weight: 700;
   color: var(--basic-black);
   list-style: none;
+  margin-left: -5px;
+  width: 400px;
 }
-.main-footer {
+/* .main-footer {
   display: flex;
   justify-content: space-around;
   position: absolute;
@@ -672,13 +740,26 @@ fieldset {
   background-color: var(--test-color-3);
   text-align: center;
   padding-bottom: 14px;
+} */
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    width: 1200px;
+    background-color: var(--test-color-3);
+    text-align: center;
+    padding-bottom: 18px;
+    margin-top: -120px;
 }
 
 .footer-phone {
   color: inherit;
 }
-.socials li {
-  list-style: none;
+.socials {
+  padding-right: 10px;
+  margin-top: 19px;
+  margin-right: -14px;
+  width: 157px;
 }
 
 .html-academy:hover {
@@ -698,13 +779,17 @@ fieldset {
 }
 .socials ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  padding-left: 0px;
 }
 .soc {
   position: relative;
-  right: 49px;
-  margin-left: 6px;
-  bottom: -23px;
+  list-style: none;
+  margin: 3px;
+  /* right: 49px;
+  margin-left: 6px; 
+  bottom: -23px;*/
 }
 
 .social-icon {
@@ -719,24 +804,27 @@ fieldset {
 .social-button:active path {
   fill: var(--test-color-2);
 }
-
+.logo-academy {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
 .logo-academy p {
   padding-top: 37px;
-  padding-right: 171px;
-  margin-left: -39px;
+  padding-right: 113px;
+  /* padding-right: 171px;
+  margin-left: -39px; */
 }
 .html-academy {
   position: absolute;
-  right: 138px;
-  bottom: 36px;
+  top: 2680px;
+  right: 245px;
 }
 .visit-sedona {
-  padding-left: 34px;
   padding-top: 4px;
 }
 .phone {
   margin-top: -12px;
-  margin-left: 37px;
 }
 /* second page*/
 
@@ -744,7 +832,7 @@ fieldset {
   margin-bottom: -9px;
 }
 
-.container-filters {
+.filters-form {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   margin-bottom: -36px;
@@ -791,7 +879,46 @@ fieldset {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
 }
-
+.filter-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 1px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off-disabled.svg);
+  background-repeat: no-repeat;
+}
+.filter-input-checkbox:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on-disabled.svg);
+  background-repeat: no-repeat;
+}
+.filter-input-checkbox:hover + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 1px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+}
+.filter-input-checkbox:checked:hover + label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -804,7 +931,7 @@ fieldset {
 }
 .filter-input-checkbox:checked:focus + label::after,
 .filter-input-checkbox:focus + label::before {
-  outline: 2px solid red;
+  outline: 2px solid var(--color-red);
 }
 
 .filter-input-checkbox label {
@@ -866,10 +993,10 @@ fieldset {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--color-brown);
   border-radius: 50%;
-  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.3);
+  box-shadow: 0 4px 0 -1px var(--toggle-color);
   position: absolute;
   top: 53px;
   cursor: pointer;
@@ -878,8 +1005,8 @@ fieldset {
   width: 4.5px;
   height: 4.5px;
   padding: 0;
-  border: 9px solid #ffffff;
-  background-color: #ababab;
+  border: 9px solid var(--basic-white);
+  background-color: var(--color-brown);
   border-radius: 50%;
   box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.3);
   position: absolute;
@@ -915,7 +1042,7 @@ fieldset {
   height: 0;
   background: var(--color-brown);
   border: 1px solid var(--special-color-gray);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px var(--special-color-gray);
   width: 313px;
   margin-top: 28px;
 }
@@ -999,6 +1126,17 @@ fieldset {
   padding-right: 0;
   margin-left: 26px;
 }
+.btn-filter-choice-type:hover {
+  color: var(--special-blue);
+  border-bottom: 1px dotted;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn-filter-choice-type:active {
+  color: var(--basic-black);
+  border: none;
+}
 .btn-filter-choice-rating {
   color: var(--test-color);
   border-bottom: 1px dotted var(--special-blue);
@@ -1080,9 +1218,9 @@ fieldset {
 }
 .amara-resort-1 {
   padding-top: 31px;
-  background-image: url(../img/Rectangle.png);
+  background-image: url(../img/rectangle.svg);
   background-repeat: no-repeat;
-  background-position: -8px 0px;
+  background-position: -27px 0px;
   background-size: 1255px 1px;
   margin-left: -53px;
   padding-left: 56px;
@@ -1132,7 +1270,7 @@ fieldset {
 }
 .desert-quail-2 {
   margin-top: 19px;
-  background-image: url(../img/Rectangle.png);
+  background-image: url(../img/rectangle.svg);
   background-repeat: no-repeat;
   background-position: 9px 5px;
   padding-top: 37px;
@@ -1176,9 +1314,9 @@ fieldset {
 .villas-3 {
   margin-top: 22px;
   margin-left: -54px;
-  background-image: url(../img/Rectangle.png);
+  background-image: url(../img/rectangle.svg);
   background-repeat: no-repeat;
-  background-position: 0px 1px;
+  background-position: 1px 1px;
   padding-top: 33px;
   padding-left: 56px;
 }
@@ -1243,7 +1381,7 @@ fieldset {
   background-color: var(--special-brown-2);
 }
 .btn-book:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--test-color-2);
   background-color: var(--special-brown-dark);
 }
 
@@ -1254,7 +1392,7 @@ fieldset {
   background-color: var(--test-color-3);
   text-align: center;
   margin-top: 9px;
-  background-image: url(../img/Rectangle.png);
+  background-image: url(../img/rectangle.svg);
   background-repeat: no-repeat;
   background-position: 0px 0px;
   padding-top: 3px;
@@ -1264,14 +1402,15 @@ fieldset {
   padding-left: 34px;
 }
 .html-academy-2-page {
+  position: absolute;
   right: 49px;
   bottom: 20px;
 }
 .html-academy-2-page:focus {
-  outline: 2px solid red;
+  outline: 2px solid var(--color-red);
 }
 .html-academy:focus {
-  outline: 2px solid red;
+  outline: 2px solid var(--color-red);
 }
 .phone-2-page {
   padding-left: 36px;
