@@ -729,7 +729,7 @@ fieldset {
   font-weight: 700;
   color: var(--basic-black);
   list-style: none;
-  margin-left: -5px;
+  margin-left: -10px;
   width: 400px;
 }
 .contacts-2 {
@@ -768,9 +768,9 @@ fieldset {
   color: inherit;
 }
 .socials {
-  padding-right: 10px;
+  padding-right: 21px;
   margin-top: 19px;
-  margin-right: -14px;
+  margin-right: 23px;
   width: 157px;
 }
 .socials-2-page {
@@ -784,7 +784,12 @@ fieldset {
 .html-academy:active {
   opacity: 0.3;
 }
-
+.html-academy-2-page:hover {
+  fill: var(--special-blue);
+}
+.html-academy-2-page:active {
+  opacity: 0.3;
+}
 .social-button {
   display: flex;
   justify-content: center;
@@ -824,20 +829,23 @@ fieldset {
   fill: var(--test-color-2);
 }
 .logo-academy {
-  width: 400px;
+  width: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding-right: 43px;
 }
 .logo-academy p {
   padding-top: 37px;
-  padding-right: 113px;
+  padding-right: 123px;
+ 
   /* padding-right: 171px;
   margin-left: -39px; */
 }
 .html-academy {
-  position: absolute;
-  top: 2680px;
-  right: 245px;
+  position: relative;
+    /* transform: translateY(20px)translateX(10px); */
+    left: 103px;
+    top: -35px;
 }
 .visit-sedona {
   padding-top: 4px;
