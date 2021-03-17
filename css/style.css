@@ -426,15 +426,18 @@ img {
   color: var(--test-color-2);
 }
 .map-section {
+  position: relative;
   height: 594px;
 }
 .map-src {
   position: absolute;
   border: 0;
-  bottom: 608px;
   z-index: 1;
 }
-
+.map-iframe {
+  position: absolute;
+  top: 0;
+}
 .location-map-img {
   position: relative;
   margin-bottom: 10px;
@@ -689,7 +692,6 @@ fieldset {
   border: 0;
   margin-top: 54px;
   padding-top: 2px;
-  margin-left: 53px;
 }
 .choice-item {
   display: flex;
@@ -730,6 +732,16 @@ fieldset {
   margin-left: -5px;
   width: 400px;
 }
+.contacts-2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  list-style: none;
+  margin-left: -19px;
+  width: 400px;
+
+}
 /* .main-footer {
   display: flex;
   justify-content: space-around;
@@ -761,7 +773,11 @@ fieldset {
   margin-right: -14px;
   width: 157px;
 }
-
+.socials-2-page {
+  padding-left: 24px;
+  margin-top: 18px;
+  width: 157px;
+}
 .html-academy:hover {
   fill: var(--special-blue);
 }
@@ -791,7 +807,10 @@ fieldset {
   margin-left: 6px; 
   bottom: -23px;*/
 }
-
+.soc-2 {
+  list-style: none;
+  margin: 3px;
+}
 .social-icon {
   fill: var(--basic-white);
 }
@@ -1371,7 +1390,6 @@ fieldset {
   line-height: 21px;
   font-weight: 700;
   border: 0;
-
   height: 27px;
   margin-left: -1px;
   padding-left: 17px;
@@ -1403,8 +1421,9 @@ fieldset {
 }
 .html-academy-2-page {
   position: absolute;
-  right: 49px;
-  bottom: 20px;
+  left: 187px;
+  top: 36px;
+
 }
 .html-academy-2-page:focus {
   outline: 2px solid var(--color-red);
@@ -1417,8 +1436,9 @@ fieldset {
   margin-top: -12px;
 }
 .socials-2-page ul {
-  padding-left: 43px;
-  margin-top: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
 }
 /* grid */
 .page {
@@ -1426,9 +1446,13 @@ fieldset {
 }
 .logo-academy-2-page {
   position: relative;
-  padding-top: 35px;
-  padding-right: 173px;
-  margin-left: -35px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.logo-academy-2-page p {
+  padding-top: 36px;
+  padding-right: 114px;
 }
 .choice-date {
   /* display: block; */
