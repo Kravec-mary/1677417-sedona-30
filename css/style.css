@@ -246,61 +246,58 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
-  padding-left: 21px;
-  margin-bottom: -19px;
-  margin-top: -18px;
+  margin-bottom: -46px;
 }
 
 .house-item {
   background-image: url(../img/house-icon.svg);
   background-repeat: no-repeat;
-  background-position: 102px 45px;
+  background-position: 83px 28px;
 }
 
 .house-item p {
-  margin-left: 14px;
-  width: 254px;
-  padding-top: 4px;
+   width: 254px;
+   margin-left: -7px;
+   padding-top: 4px;
 }
 
 .house-item h3 {
-  padding-left: 11px;
-  padding-top: 4px;
+  margin-right: 109px;
 }
 
 .food-item {
   background-image: url(../img/food-icon.svg);
   background-repeat: no-repeat;
   margin-left: -3px;
-  width: 297px;
-  background-position: 116px 47px;
+  /* width: 297px; */
+  background-position: 132px 29px;
 }
 
 .food-item h3 {
-  padding-top: 3px;
-  padding-left: 8px;
+ margin-right: 8px;
 }
 
 .food-item p {
-  padding-top: 4px;
-  margin-left: 12px;
+  padding-top: 5px;
+  margin-left: 23px;
+  width: 296px;
 }
 
 .gift-item {
   background-image: url(../img/gift-icon.svg);
   background-repeat: no-repeat;
-  background-position: 103px 41px;
-  width: 269px;
+  background-position: 183px 23px;
   padding-right: 66px;
 }
 
 .gift-item p {
-  padding-top: 3px;
+  width: 269px;
+  padding-top: 4px;
+  margin-left: 83px;
 }
 
 .gift-item h3 {
-  padding-top: 4px;
-  padding-left: 3px;
+  padding-left: 82px;
 }
 
 .feature-item {
@@ -312,15 +309,15 @@ img {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  padding-top: 95px;
-  margin-bottom: 87px;
+  padding-top: 82px;
+  margin-bottom: 112px;
+  width: 350px;
 }
 
 .feature-item h3 {
   color: var(--basic-black);
   font-size: 21px;
-  margin-top: -4px;
-  margin-left: 0px;
+  /* padding-top: 12px; */
 }
 
 .item-reasons {
@@ -803,10 +800,9 @@ fieldset {
   font-weight: 700;
   color: var(--basic-black);
   list-style: none;
-  width: 400px;
 }
 
-.contacts-2 {
+/* .contacts-2 {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -814,13 +810,12 @@ fieldset {
   list-style: none;
   margin-left: -19px;
   width: 400px;
-}
+} */
 
 .main-footer {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   z-index: 1;
-  width: 1200px;
   background-color: var(--test-color-3);
   text-align: center;
   padding-bottom: 20px;
@@ -834,7 +829,6 @@ fieldset {
 
 .socials {
   margin-top: 19px;
-  width: 400px;
 }
 
 .socials-2-page {
@@ -871,7 +865,8 @@ fieldset {
 .socials ul {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 123px;
+  padding: 0;
+  justify-content: center;
 }
 
 .soc {
@@ -902,7 +897,6 @@ fieldset {
 }
 
 .logo-academy {
-  width: 400px;
   display: flex;
   justify-content: space-around;
 }
@@ -920,12 +914,12 @@ fieldset {
 
 .visit-sedona {
   padding-top: 3px;
-  padding-left: 72px;
+  /* padding-left: 72px; */
 }
 
 .phone {
   margin-top: -13px;
-  margin-left: 74px;
+  /* margin-left: 74px; */
 }
 
 /* second page*/
@@ -1342,7 +1336,7 @@ fieldset {
   background-repeat: space;
   background-image: url(../img/star.svg);
   left: 1026px;
-  bottom: 383px;
+  bottom: 380px;
 }
 
 .container-rating-stars {
@@ -1412,7 +1406,7 @@ fieldset {
   background-repeat: space;
   background-image: url(../img/star.svg);
   left: 1049px;
-  bottom: 233px;
+  bottom: 230px;
 }
 
 .subtitle {
@@ -1481,13 +1475,13 @@ fieldset {
   background-image: url(../img/rectangle.svg);
   background-repeat: no-repeat;
   background-position: 1px 1px, 2px 2px;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-left: 56px;
 }
 
 .villas-3 h3 {
-  margin-top: -6px;
-  margin-left: -1px;
+  margin-top: -2px;
+  margin-left: 1px;
 }
 
 .hotel-rating-3 {
@@ -1496,7 +1490,7 @@ fieldset {
 }
 
 .container-rating-stars-2 {
-  margin-top: 65px;
+  margin-top: 67px;
 }
 
 .stars-3 {
@@ -1507,7 +1501,7 @@ fieldset {
   background-repeat: space;
   background-image: url(../img/star.svg);
   left: 1075px;
-  bottom: 81px;
+  bottom: 78px;
 }
 
 .btn-detail {
@@ -1557,9 +1551,10 @@ fieldset {
   background-color: var(--special-brown-dark);
 }
 .line-footer {
-  background-image: url(../img/rectangle.svg);
+  /* background-image: url(../img/rectangle.svg);
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: 0px -1px; */
+  border-top: 1px solid var(--special-color-grey);
 }
 /*.main-footer-2-page {
   display: flex;
