@@ -74,7 +74,7 @@
 }
 
 .navigation-item {
-  width: 100px;
+  width: 223px;
 }
 
 .navigation-item:nth-child(4n),
@@ -88,7 +88,7 @@
 }
 
 .navigation-item:nth-child(4n-2) {
-  margin-right: 272px;
+  margin-right: 151px;
 }
 
 .page-navigation-link {
@@ -474,6 +474,7 @@ img {
 .map-section {
   position: relative;
   height: 594px;
+  margin-bottom: -120px;
 }
 
 .map-src {
@@ -494,7 +495,7 @@ img {
 
 .choice-date {
   position: absolute;
-  bottom: 198px;
+  bottom: 79px;
   left: 50.1%;
   margin-left: -284px;
   display: flex;
@@ -802,7 +803,6 @@ fieldset {
   font-weight: 700;
   color: var(--basic-black);
   list-style: none;
-  margin-left: -10px;
   width: 400px;
 }
 
@@ -823,8 +823,9 @@ fieldset {
   width: 1200px;
   background-color: var(--test-color-3);
   text-align: center;
-  padding-bottom: 18px;
-  margin-top: -120px;
+  padding-bottom: 20px;
+  
+  /*margin-top: -120px;*/
 }
 
 .footer-phone {
@@ -832,10 +833,8 @@ fieldset {
 }
 
 .socials {
-  padding-right: 21px;
   margin-top: 19px;
-  margin-right: 23px;
-  width: 157px;
+  width: 400px;
 }
 
 .socials-2-page {
@@ -872,7 +871,7 @@ fieldset {
 .socials ul {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0px;
+  padding-left: 123px;
 }
 
 .soc {
@@ -880,12 +879,12 @@ fieldset {
   list-style: none;
   margin: 3px;
 }
-
+/*
 .soc-2 {
   list-style: none;
   margin: 3px;
 }
-
+*/
 .social-icon {
   fill: var(--basic-white);
 }
@@ -903,29 +902,30 @@ fieldset {
 }
 
 .logo-academy {
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: space-around;
-  padding-right: 43px;
 }
 
 .logo-academy p {
-  padding-top: 37px;
-  padding-right: 123px;
+  padding-top: 10px;
+  padding-right: 78px;
 }
 
 .html-academy {
   position: relative;
-  left: 103px;
-  top: -35px;
+  left: 6px;
+  top: 13px;
 }
 
 .visit-sedona {
-  padding-top: 4px;
+  padding-top: 3px;
+  padding-left: 72px;
 }
 
 .phone {
-  margin-top: -12px;
+  margin-top: -13px;
+  margin-left: 74px;
 }
 
 /* second page*/
@@ -953,9 +953,9 @@ fieldset {
   position: relative;
 }
 
-.filter-list {
+/* .filter-list {
   margin-top: px;
-}
+} */
 
 .filtering {
   background-color: var(--special-blue);
@@ -1129,7 +1129,7 @@ fieldset {
   border: 9px solid var(--basic-white);
   background-color: var(--color-brown);
   border-radius: 50%;
-  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.3);
+  box-shadow: 0 4px 0 -1px var(--toggle-color);
   position: absolute;
   top: 53px;
   cursor: pointer;
@@ -1358,6 +1358,7 @@ fieldset {
   position: relative;
   list-style: none;
   margin-left: 13px;
+  margin-bottom: 26px;
 }
 
 .amara-resort-1 {
@@ -1479,7 +1480,7 @@ fieldset {
   margin-left: -54px;
   background-image: url(../img/rectangle.svg);
   background-repeat: no-repeat;
-  background-position: 1px 1px;
+  background-position: 1px 1px, 2px 2px;
   padding-top: 33px;
   padding-left: 56px;
 }
@@ -1555,8 +1556,12 @@ fieldset {
   color: var(--test-color-2);
   background-color: var(--special-brown-dark);
 }
-
-.main-footer-2-page {
+.line-footer {
+  background-image: url(../img/rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+/*.main-footer-2-page {
   display: flex;
   justify-content: space-around;
   width: 1200px;
@@ -1597,7 +1602,7 @@ fieldset {
   flex-wrap: wrap;
   padding-left: 0px;
 }
-
+*/
 /* grid */
 
 .page {
