@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="favicon/180.png" />
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -12,7 +14,7 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="page-navigation page-navigation-2-page">
+      <ul class="page-navigation">
         <li class="navigation-item"><a class="page-navigation-link" href="#">Информация</a></li>
         <li class="navigation-item"><a class="page-navigation-link" href="#">Фото и видео</a></li>
         <li class="navigation-item"><a class="page-navigation-link" href="#">Карта штата</a></li>
@@ -76,11 +78,11 @@
           </div>
           <div class="range-filter">
             <div class="range-controls">
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
               <div class="scale"></div>
               <div class="bar"></div>
             </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
           </div>
           <button class="filter-btn" type="submit" value="https://echo.htmlacademy.ru/">Показать</button>
 
@@ -90,13 +92,9 @@
     <section>
      <div class="container-found-filters">
         <div class="container-found">
-          <div>
             <h3 class="heding-found">Найдено:</h3>
-          </div>
-          <div><span class="result">3</span></div>
-          <div>
+            <span class="result">3</span>
             <p class="paragraph">Сортировка:</p>
-          </div>
         </div>
         <ul class="list-filter">
           <li class="btn-choice">
