@@ -36,8 +36,8 @@
   font-weight: 400;
   font-display: swap;
   src: local("PT Sans"), local("PTSans"),
-    url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+  url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -46,8 +46,8 @@
   font-weight: 700;
   font-display: swap;
   src: local("PT Sans-Bold"), local("PTSans-Bold"),
-    url("PTSans-Bold.woff2") format("woff2"),
-    url("PTSans-Bold.woff") format("woff");
+  url("PTSans-Bold.woff2") format("woff2"),
+  url("PTSans-Bold.woff") format("woff");
 }
 
 .page {
@@ -171,7 +171,7 @@ img {
   width: 1200px;
   background-color: var(--special-blue);
   background-image: url(../img/sedona-part-of-background-2.svg),
-    url(../img/sedona-1page-background.jpg);
+  url(../img/sedona-1page-background.jpg);
   background-position: bottom, top;
   background-repeat: no-repeat;
   text-align: center;
@@ -261,7 +261,6 @@ img {
 .food-item {
   background-image: url(../img/food-icon.svg);
   background-repeat: no-repeat;
-  /* margin-left: -3px; */
   background-position: 50% 13%;
 }
 
@@ -746,12 +745,6 @@ fieldset {
   font-weight: 700;
 }
 
-/* input[type="text"]::-moz-placeholder {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-} */
-
 .input-item-date::placeholder {
   color: var(--basic-black);
   opacity: 1;
@@ -986,6 +979,7 @@ fieldset {
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
 }
+
 .filter-input-checkbox:focus:not(:checked) + label::before {
   outline: 2px solid var(--color-red);
 }
@@ -1051,9 +1045,9 @@ fieldset {
   width: 313px;
   height: 32px;
   border: 2px solid var(--basic-white);
-  border-radius: 2px;
-  
+  border-radius: 2px; 
 }
+
 .prise-range-choice::after {
   position: absolute;
   content: "";
@@ -1064,7 +1058,6 @@ fieldset {
   top: 7px;
 }
 
-
 .prise-range-choice {
   list-style: none;
   color: var(--basic-white);
@@ -1072,48 +1065,6 @@ fieldset {
   position: relative;
 }
 
-/* .toggle {
-  width: 4px;
-  height: 4px;
-  padding: 0;
-  border: 8px solid var(--basic-white);
-  background-color: var(--color-brown);
-  border-radius: 50%;
-  box-shadow: 0 4px 0 -1px var(--toggle-color);
-  position: absolute;
-  top: 53px;
-  cursor: pointer;
-}
-
-.toggle:hover {
-  width: 4.5px;
-  height: 4.5px;
-  padding: 0;
-  border: 9px solid var(--basic-white);
-  background-color: var(--color-brown);
-  border-radius: 50%;
-  box-shadow: 0 4px 0 -1px var(--toggle-color);
-  position: absolute;
-  top: 53px;
-  cursor: pointer;
-}
-
-.range-controls {
-  position: relative;
-  height: 20px;
-  margin-top: -9px;
-  margin-bottom: 15px;
-}
-
-.toggle-min {
-  left: 0;
-  top: -10px;
-}
-
-.toggle-max {
-  left: 250px;
-  top: -10px;
-} */
 .toggle {
   width: 4px;
   height: 4px;
@@ -1147,6 +1098,7 @@ fieldset {
 .toggle-max {
   left: 263px;
 }
+
 .filter-btn {
   background: transparent;
   color: var(--basic-white);
@@ -1560,71 +1512,18 @@ fieldset {
   color: var(--test-color-2);
   background-color: var(--special-brown-dark);
 }
+
 .line-footer {
   border-top: 1px solid var(--special-color-grey);
 }
-/*.main-footer-2-page {
-  display: flex;
-  justify-content: space-around;
-  width: 1200px;
-  background-color: var(--test-color-3);
-  text-align: center;
-  margin-top: 9px;
-  background-image: url(../img/rectangle.svg);
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-  padding-top: 3px;
-}
 
-.visit-sedona-2-page {
-  padding-left: 34px;
-}
-
-.html-academy-2-page {
-  position: absolute;
-  left: 187px;
-  top: 36px;
-}
-
-.html-academy-2-page:focus {
-  outline: 2px solid var(--color-red);
-}
-
-.html-academy:focus {
-  outline: 2px solid var(--color-red);
-}
-
-.phone-2-page {
-  padding-left: 36px;
-  margin-top: -12px;
-}
-
-.socials-2-page ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0px;
-}
-*/
 /* grid */
 
 .page {
   height: 100%;
 }
 
-/* .logo-academy-2-page {
-  position: relative;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-academy-2-page p {
-  padding-top: 36px;
-  padding-right: 114px;
-} */
-
 .choice-date {
-  /* display: block; */
   animation: bounce 0.6s;
 }
 
