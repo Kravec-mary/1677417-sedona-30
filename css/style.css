@@ -206,12 +206,10 @@ img {
 .reasons-list {
   display: flex;
   flex-direction: column;
-  /* padding: 0; */
   padding-left: 0;
   margin-top: -15px;
-
-  
 }
+
 .reason-item-divels-bridge {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -260,49 +258,17 @@ img {
   background-position: 50% 12%;
 }
 
-.house-item p {
-   /* width: 254px; */
-   /* margin-left: 34px;
-   padding-top: 4px; */
-}
-
-.house-item h3 {
-  /* margin-right: 32px; */
-}
-
 .food-item {
   background-image: url(../img/food-icon.svg);
   background-repeat: no-repeat;
-  margin-left: -3px;
-  /* width: 297px; */
+  /* margin-left: -3px; */
   background-position: 50% 13%;
-}
-
-.food-item h3 {
- /* margin-right: -27px; */
-}
-
-.food-item p {
-  /* padding-top: 3px;
-  margin-left: 42px; */
-  /* width: 296px; */
 }
 
 .gift-item {
   background-image: url(../img/gift-icon.svg);
   background-repeat: no-repeat;
   background-position: 50% 11%;
-  /* padding-right: 66px; */
-}
-
-.gift-item p {
-  /* width: 269px; */
-  /* padding-top: 4px;
-  margin-left: 83px; */
-}
-
-.gift-item h3 {
-  /* padding-left: 85px; */
 }
 
 .feature-item {
@@ -320,17 +286,16 @@ img {
   padding-right: 54px;
   padding-bottom: 78px;
 }
+
 .feature-item-text {
   padding-top: 4px;
 }
+
 .feature-item h3 {
   color: var(--basic-black);
   font-size: 21px;
-  /* padding-top: 12px; */
 }
-/* .features-list {
-  padding: 0;
-} */
+
 .item-reasons {
   list-style: none;
 }
@@ -530,14 +495,16 @@ fieldset {
 }
 
 .choice-item-departure {
-  padding-left: 57px;
+  padding-left: 44px;
   padding-top: 29px;
 }
 
 .choice-item-departure input {
-  margin-left: -12px;
+  width: 329px;
+  height: 25px;
   padding-left: 11px;
-  padding-right: 25px;
+  padding-top: 4px;
+  padding-bottom: 6px;
 }
 
 .choice-age-item {
@@ -548,18 +515,15 @@ fieldset {
 .choice-item input {
   background-color: var(--special-color-dark-white);
   text-transform: uppercase;
-  width: 309px;
-  height: 30px;
-  /* border: 0; */
   border: 2px solid var(--special-color-dark-white);
-  padding-top: 7px;
 }
 
 .choice-item-arrival input {
-  padding-left: 11px;
-  margin-left: 5px;
-  padding-right: 25px;
-  margin-right: -3px;
+  width: 329px;
+  height: 26px;
+  padding-left: 12px;
+  padding-top: 6px;
+  padding-bottom: 3px;
 }
 
 .choice-item input:hover {
@@ -589,14 +553,14 @@ fieldset {
 .age {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
+  padding-top: 29px;
 }
 
 .age input {
-  width: 27px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
   margin-right: -4px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-top: 5px;
 }
@@ -604,21 +568,21 @@ fieldset {
 .age button {
   border: none;
   width: 37px;
-  height: 39px;
+  height: 37px;
   padding-top: 9px;
   background-color: var(--special-color-dark-white);
 }
 
 .label-date-arrival {
-  padding-right: 20px;
-  margin-left: 11px;
+  padding-right: 24px;
+  margin-left: 10px;
   padding-top: 7px;
 }
 
 .label-date-departure {
-  padding-right: 33px;
+  padding-right: 20px;
+  margin-left: 11px;
   padding-top: 7px;
-  margin-left: -2px;
 }
 
 .label-adult {
@@ -636,16 +600,16 @@ fieldset {
 }
 
 .btn-calendar-first {
-  padding-left: 17px;
-  padding-right: 17px;
-  margin-left: -31px;
+  padding-left: 25px;
+  padding-right: 10px;
+  margin-left: -35px;
   border: 0;
   background-color: transparent;
 }
 
 .calendar-1 {
   position: absolute;
-  transform: translateY(-11px) translateX(-13px);
+  transform: translateY(-11px) translateX(-20px);
   fill: var(--special-grey-2);
 }
 
@@ -769,7 +733,7 @@ fieldset {
   font-weight: 700;
   text-transform: uppercase;
   border: 0;
-  margin-top: 54px;
+  margin-top: 55px;
   padding-top: 2px;
 }
 
@@ -781,14 +745,16 @@ fieldset {
   line-height: 26px;
   font-weight: 700;
 }
-input[type="text"]::-moz-placeholder {
+
+/* input[type="text"]::-moz-placeholder {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-}
+} */
 
 .input-item-date::placeholder {
   color: var(--basic-black);
+  opacity: 1;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -799,6 +765,7 @@ input[type="text"]::-moz-placeholder {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  opacity: 1;
 }
 
 .find-btn:hover {
@@ -820,16 +787,6 @@ input[type="text"]::-moz-placeholder {
   list-style: none;
 }
 
-/* .contacts-2 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: var(--basic-black);
-  list-style: none;
-  margin-left: -19px;
-  width: 400px;
-} */
-
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -839,7 +796,6 @@ input[type="text"]::-moz-placeholder {
   padding-bottom: 20px;
   padding-right: 58px;
   padding-left: 56px;
-  /* min-height: 120px; */
 }
 
 .footer-phone {
@@ -850,12 +806,6 @@ input[type="text"]::-moz-placeholder {
   margin-top: 19px;
 }
 
-/* .socials-2-page {
-  padding-left: 24px;
-  margin-top: 18px;
-  width: 157px;
-} */
-
 .html-academy:hover {
   fill: var(--special-blue);
 }
@@ -863,14 +813,6 @@ input[type="text"]::-moz-placeholder {
 .html-academy:active {
   opacity: 0.3;
 }
-
-/* .html-academy-2-page:hover {
-  fill: var(--special-blue);
-}
-
-.html-academy-2-page:active {
-  opacity: 0.3;
-} */
 
 .social-button {
   display: flex;
@@ -893,12 +835,7 @@ input[type="text"]::-moz-placeholder {
   list-style: none;
   margin: 3px;
 }
-/*
-.soc-2 {
-  list-style: none;
-  margin: 3px;
-}
-*/
+
 .social-icon {
   fill: var(--basic-white);
 }
@@ -1081,6 +1018,7 @@ input[type="text"]::-moz-placeholder {
 
 .prise-range-choice input::placeholder {
   color: var(--basic-white);
+  opacity: 1;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -1088,12 +1026,6 @@ input[type="text"]::-moz-placeholder {
 }
 
 .prise-range-choice input {
-  /* width: 48%;
-  height: 36px;
-  text-align: center;
-  padding-right: 0px;
-  border: none;
-  padding-left: 4px; */
   width: 48%;
   height: 19px;
   text-align: center;
@@ -1101,12 +1033,16 @@ input[type="text"]::-moz-placeholder {
   border: none;
   padding-left: 4px;
   padding-top: 8px;
+  padding-bottom: 10px;
 }
+
 .range-filter {
   width: 350px;
   overflow: hidden;
   margin-bottom: 33px;
+  margin-top: -9px;
 }
+
 .prise-range-choice::before {
   position: absolute;
   content: "";
@@ -1198,7 +1134,7 @@ input[type="text"]::-moz-placeholder {
   border: 9px solid var(--basic-white);
   background-color: var(--color-brown);
   border-radius: 50%;
-  box-shadow: 0 4px 0 -1px rgba(171, 171, 171, 0.3);
+  box-shadow: 0 4px 0 -1px var(--toggle-color);
   position: absolute;
   top: 53px;
   cursor: pointer;
