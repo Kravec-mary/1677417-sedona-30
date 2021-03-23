@@ -1016,16 +1016,14 @@ fieldset {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  padding-top: 10px;
 }
 
 .prise-range-choice input {
-  width: 48%;
-  height: 19px;
+  width: 150px;
+  height: 17px;
   text-align: center;
-  padding-right: 0px;
   border: none;
-  padding-left: 4px;
+  padding-left: 5px;
   padding-top: 8px;
   padding-bottom: 10px;
 }
@@ -1034,13 +1032,13 @@ fieldset {
   width: 350px;
   overflow: hidden;
   margin-bottom: 33px;
-  margin-top: -9px;
+  margin-top: -7px;
 }
 
 .prise-range-choice::before {
   position: absolute;
   content: "";
-  left: -2px;
+  left: 30px;
   top: 0;
   width: 313px;
   height: 32px;
@@ -1061,8 +1059,10 @@ fieldset {
 .prise-range-choice {
   list-style: none;
   color: var(--basic-white);
-  width: 317px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  right: 31px;
 }
 
 .toggle {
